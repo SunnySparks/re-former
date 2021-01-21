@@ -1,8 +1,14 @@
-<%= form_tag("/user") do %>
-    <%= label_tag('user[username]', "Username") %>
-    <%= text_field_tag('user[username]') %>
-
-    <%= password_field('user[password]', "Password") %>
-  
-    <%= submit_tag "Submit information" %>
+<%= form_for("user") do |f| %>
+    <%= f.label :username %>
+    <%= f.text_field :username %>
+    <%= f.label :email %>
+    <%= f.email_field :email %>
+    <%= f.label :password %>
+    <%= f.password_field :password %>
+    <%= f.submit %>
   <% end %>
+
+
+
+
+
