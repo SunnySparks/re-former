@@ -1,11 +1,18 @@
-<%= form_for("user") do |f| %>
+<h1> This is the Registration page </h1>
+
+<%= form_with model: @user, url: { action: "create" }, class: "form-signup" do |f| %>
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
     <%= f.label :username %>
     <%= f.text_field :username %>
+    <p>
     <%= f.label :email %>
-    <%= f.email_field :email %>
+    <input id="user_address" name="user[email]" type="email" />
+    </p>
     <%= f.label :password %>
-    <%= f.password_field :password %>
+    <input type="password" id="login_pass" name="user[password]"/>
+    <p>
     <%= f.submit %>
+    </p>
   <% end %>
 
 
