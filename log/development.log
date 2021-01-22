@@ -6560,3 +6560,1460 @@ Processing by UsersController#create as JS
 Completed 200 OK in 18ms (Views: 5.9ms | ActiveRecord: 1.9ms | Allocations: 3032)
 
 
+Started GET "/users/new" for ::1 at 2021-01-22 11:09:16 -0600
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (4.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 69.3ms | Allocations: 3223)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 291ms (Views: 210.6ms | ActiveRecord: 3.3ms | Allocations: 15582)
+
+
+Started GET "/users/new" for ::1 at 2021-01-22 11:14:38 -0600
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 50.2ms | Allocations: 1109)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 183ms (Views: 153.9ms | ActiveRecord: 0.0ms | Allocations: 5950)
+
+
+Started GET "/users/new" for ::1 at 2021-01-22 11:14:52 -0600
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.4ms | Allocations: 98)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 33ms (Views: 30.8ms | ActiveRecord: 0.0ms | Allocations: 4955)
+
+
+Started GET "/http://localhost:3000/users/new?username=UserHTML&email=Josediazt6%40outlook.com&pwd=iamsunt6" for ::1 at 2021-01-22 11:15:01 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/http:/localhost:3000/users/new"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/users/new" for ::1 at 2021-01-22 11:15:28 -0600
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 97)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 76ms (Views: 64.6ms | ActiveRecord: 0.0ms | Allocations: 4948)
+
+
+Started GET "/users/new_user_path?username=UserHTML&email=Josediazt6%40outlook.com&pwd=iamsunt6" for ::1 at 2021-01-22 11:15:42 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/users/new_user_path"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/users/new" for ::1 at 2021-01-22 11:16:03 -0600
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 2.7ms | Allocations: 97)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 160ms (Views: 122.0ms | ActiveRecord: 0.0ms | Allocations: 4942)
+
+
+Started GET "/users/new?username=UserHTML&email=Josediazt6%40outlook.com&pwd=iamsunt6" for ::1 at 2021-01-22 11:16:11 -0600
+Processing by UsersController#new as HTML
+  Parameters: {"username"=>"UserHTML", "email"=>"Josediazt6@outlook.com", "pwd"=>"iamsunt6"}
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 26ms (Views: 24.2ms | ActiveRecord: 0.0ms | Allocations: 3936)
+
+
+Started GET "/users/new?username=UserHTML&email=Josediazt6%40outlook.com&pwd=iamsunt6" for ::1 at 2021-01-22 11:17:14 -0600
+  [1m[35m (6.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (3.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#new as HTML
+  Parameters: {"username"=>"UserHTML", "email"=>"Josediazt6@outlook.com", "pwd"=>"iamsunt6"}
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 4.5ms | Allocations: 218)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 303ms (Views: 147.0ms | ActiveRecord: 51.4ms | Allocations: 12589)
+
+
+Started GET "/users/new?username=userHTML&email=Josediazt6%40outlook.com&pwd=iamsunt6" for ::1 at 2021-01-22 11:17:24 -0600
+Processing by UsersController#new as HTML
+  Parameters: {"username"=>"userHTML", "email"=>"Josediazt6@outlook.com", "pwd"=>"iamsunt6"}
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 5)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 26ms (Views: 25.0ms | ActiveRecord: 0.0ms | Allocations: 3938)
+
+
+Started GET "/users/new?username=userHTML&email=Josediazt6%40outlook.com&pwd=iamsunt6" for ::1 at 2021-01-22 11:17:56 -0600
+Processing by UsersController#new as HTML
+  Parameters: {"username"=>"userHTML", "email"=>"Josediazt6@outlook.com", "pwd"=>"iamsunt6"}
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 3.7ms | Allocations: 97)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 254ms (Views: 250.6ms | ActiveRecord: 0.0ms | Allocations: 4942)
+
+
+Started GET "/users/new?username=userHTML&email=Josediazt6%40outlook.com&pwd=iamsunt6" for ::1 at 2021-01-22 11:18:34 -0600
+Processing by UsersController#new as HTML
+  Parameters: {"username"=>"userHTML", "email"=>"Josediazt6@outlook.com", "pwd"=>"iamsunt6"}
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.5ms | Allocations: 97)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 44ms (Views: 41.0ms | ActiveRecord: 0.0ms | Allocations: 4958)
+
+
+Started GET "/users/new?username=UserHTML&email=email%40email.com&password=[FILTERED]" for ::1 at 2021-01-22 11:18:45 -0600
+Processing by UsersController#new as HTML
+  Parameters: {"username"=>"UserHTML", "email"=>"email@email.com", "password"=>"[FILTERED]"}
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 5)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 59ms (Views: 53.8ms | ActiveRecord: 0.0ms | Allocations: 3942)
+
+
+Started GET "/users/new?username=UserHTML&email=email%40email.com&password=[FILTERED]" for ::1 at 2021-01-22 11:19:32 -0600
+Processing by UsersController#new as HTML
+  Parameters: {"username"=>"UserHTML", "email"=>"email@email.com", "password"=>"[FILTERED]"}
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 141)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 101ms (Views: 89.1ms | ActiveRecord: 0.0ms | Allocations: 4994)
+
+
+Started GET "/users/new?authenticity_token=bBV%2BwcxETeeMqpl%2F%2FdgOSibRbUX7NizZ3%2F%2BSZkwDTODm5l%2FAA9rVqw%2BenOTfUwDMOAX%2Bv%2FZylieFmTVEm2hYsQ%3D%3D&username=UserHTML&email=insta%40test.com&password=[FILTERED]" for ::1 at 2021-01-22 11:19:56 -0600
+Processing by UsersController#new as HTML
+  Parameters: {"authenticity_token"=>"bBV+wcxETeeMqpl//dgOSibRbUX7NizZ3/+SZkwDTODm5l/AA9rVqw+enOTfUwDMOAX+v/ZylieFmTVEm2hYsQ==", "username"=>"UserHTML", "email"=>"insta@test.com", "password"=>"[FILTERED]"}
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.2ms | Allocations: 22)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 40ms (Views: 39.0ms | ActiveRecord: 0.0ms | Allocations: 3951)
+
+
+Started GET "/users/new?authenticity_token=bBV%2BwcxETeeMqpl%2F%2FdgOSibRbUX7NizZ3%2F%2BSZkwDTODm5l%2FAA9rVqw%2BenOTfUwDMOAX%2Bv%2FZylieFmTVEm2hYsQ%3D%3D&username=UserHTML&email=insta%40test.com&password=[FILTERED]" for ::1 at 2021-01-22 11:20:46 -0600
+  [1m[35m (8.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#new as HTML
+  Parameters: {"authenticity_token"=>"bBV+wcxETeeMqpl//dgOSibRbUX7NizZ3/+SZkwDTODm5l/AA9rVqw+enOTfUwDMOAX+v/ZylieFmTVEm2hYsQ==", "username"=>"UserHTML", "email"=>"insta@test.com", "password"=>"[FILTERED]"}
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 2.8ms | Allocations: 267)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 155ms (Views: 86.9ms | ActiveRecord: 2.1ms | Allocations: 12627)
+
+
+Started GET "/users/new?authenticity_token=vo09raHXA23n1AZB05nxiCe3EFmX91E9ffa7ccz5S%2B00fhysbkmbIWTgA9rxEv8OOWODo5qz68MnkBxTG5JfvA%3D%3D&username=UserHTML&email=insta%40test.com&password=[FILTERED]" for ::1 at 2021-01-22 11:20:54 -0600
+Processing by UsersController#new as HTML
+  Parameters: {"authenticity_token"=>"vo09raHXA23n1AZB05nxiCe3EFmX91E9ffa7ccz5S+00fhysbkmbIWTgA9rxEv8OOWODo5qz68MnkBxTG5JfvA==", "username"=>"UserHTML", "email"=>"insta@test.com", "password"=>"[FILTERED]"}
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.3ms | Allocations: 23)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 30ms (Views: 28.4ms | ActiveRecord: 0.0ms | Allocations: 3962)
+
+
+Started GET "/users/new?authenticity_token=vo09raHXA23n1AZB05nxiCe3EFmX91E9ffa7ccz5S%2B00fhysbkmbIWTgA9rxEv8OOWODo5qz68MnkBxTG5JfvA%3D%3D&username=UserHTML&email=insta%40test.com&password=[FILTERED]" for ::1 at 2021-01-22 11:22:19 -0600
+Processing by UsersController#new as HTML
+  Parameters: {"authenticity_token"=>"vo09raHXA23n1AZB05nxiCe3EFmX91E9ffa7ccz5S+00fhysbkmbIWTgA9rxEv8OOWODo5qz68MnkBxTG5JfvA==", "username"=>"UserHTML", "email"=>"insta@test.com", "password"=>"[FILTERED]"}
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.9ms | Allocations: 136)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 39ms (Views: 33.5ms | ActiveRecord: 0.0ms | Allocations: 4978)
+
+
+Started GET "/users/new?authenticity_token=uyRvThN%2FZQKOb56obTiUkJxFVVUD9h4Fv7N5ypMxjvQx105P3OH9Tg1bmzNPs5oWgpHGrw6ypPvl1d7oRFqapQ%3D%3D&username=UserHTML&email=insta%40test.com&password=[FILTERED]" for ::1 at 2021-01-22 11:22:35 -0600
+Processing by UsersController#new as HTML
+  Parameters: {"authenticity_token"=>"uyRvThN/ZQKOb56obTiUkJxFVVUD9h4Fv7N5ypMxjvQx105P3OH9Tg1bmzNPs5oWgpHGrw6ypPvl1d7oRFqapQ==", "username"=>"UserHTML", "email"=>"insta@test.com", "password"=>"[FILTERED]"}
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.2ms | Allocations: 22)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 24ms (Views: 21.0ms | ActiveRecord: 0.0ms | Allocations: 3947)
+
+
+Started GET "/users/new?authenticity_token=uyRvThN%2FZQKOb56obTiUkJxFVVUD9h4Fv7N5ypMxjvQx105P3OH9Tg1bmzNPs5oWgpHGrw6ypPvl1d7oRFqapQ%3D%3D&username=UserHTML&email=insta%40test.com&password=[FILTERED]" for ::1 at 2021-01-22 11:23:07 -0600
+Processing by UsersController#new as HTML
+  Parameters: {"authenticity_token"=>"uyRvThN/ZQKOb56obTiUkJxFVVUD9h4Fv7N5ypMxjvQx105P3OH9Tg1bmzNPs5oWgpHGrw6ypPvl1d7oRFqapQ==", "username"=>"UserHTML", "email"=>"insta@test.com", "password"=>"[FILTERED]"}
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 2.7ms | Allocations: 135)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 51ms (Views: 48.4ms | ActiveRecord: 0.0ms | Allocations: 4974)
+
+
+Started GET "/users/new/?authenticity_token=bS9OOIsBD%2B7AGfXa4SmP8Q41nWnUyPkZ7C5tRlb%2B%2FE3n3G85RJ%2BXokMt8EHDooF3EOEOk9mMQ%2Be2SMpkgZXoHA%3D%3D&username=UserHTML&email=insta%40test.com&password=[FILTERED]" for ::1 at 2021-01-22 11:23:15 -0600
+Processing by UsersController#new as HTML
+  Parameters: {"authenticity_token"=>"bS9OOIsBD+7AGfXa4SmP8Q41nWnUyPkZ7C5tRlb+/E3n3G85RJ+XokMt8EHDooF3EOEOk9mMQ+e2SMpkgZXoHA==", "username"=>"UserHTML", "email"=>"insta@test.com", "password"=>"[FILTERED]"}
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.3ms | Allocations: 22)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 24ms (Views: 22.3ms | ActiveRecord: 0.0ms | Allocations: 3943)
+
+
+Started GET "/users/new/?authenticity_token=bS9OOIsBD%2B7AGfXa4SmP8Q41nWnUyPkZ7C5tRlb%2B%2FE3n3G85RJ%2BXokMt8EHDooF3EOEOk9mMQ%2Be2SMpkgZXoHA%3D%3D&username=UserHTML&email=insta%40test.com&password=[FILTERED]" for ::1 at 2021-01-22 11:23:42 -0600
+Processing by UsersController#new as HTML
+  Parameters: {"authenticity_token"=>"bS9OOIsBD+7AGfXa4SmP8Q41nWnUyPkZ7C5tRlb+/E3n3G85RJ+XokMt8EHDooF3EOEOk9mMQ+e2SMpkgZXoHA==", "username"=>"UserHTML", "email"=>"insta@test.com", "password"=>"[FILTERED]"}
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 3.0ms | Allocations: 135)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 74ms (Views: 70.6ms | ActiveRecord: 0.0ms | Allocations: 4976)
+
+
+Started GET "/users/new?authenticity_token=g%2Bj9QXmMaMXbSHTkTbUVbgUG6%2BmJihxSmqtrXNrnuQcJG9xAthLwiVh8cX9vPhvoG9J4E4TOpqzAzcx%2BDYytVg%3D%3D&username=userHTML&email=insta%40test.com&password=[FILTERED]" for ::1 at 2021-01-22 11:23:50 -0600
+Processing by UsersController#new as HTML
+  Parameters: {"authenticity_token"=>"g+j9QXmMaMXbSHTkTbUVbgUG6+mJihxSmqtrXNrnuQcJG9xAthLwiVh8cX9vPhvoG9J4E4TOpqzAzcx+DYytVg==", "username"=>"userHTML", "email"=>"insta@test.com", "password"=>"[FILTERED]"}
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.2ms | Allocations: 22)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 21ms (Views: 19.5ms | ActiveRecord: 0.0ms | Allocations: 3946)
+
+
+Started GET "/users/new?authenticity_token=g%2Bj9QXmMaMXbSHTkTbUVbgUG6%2BmJihxSmqtrXNrnuQcJG9xAthLwiVh8cX9vPhvoG9J4E4TOpqzAzcx%2BDYytVg%3D%3D&username=userHTML&email=insta%40test.com&password=[FILTERED]" for ::1 at 2021-01-22 11:25:40 -0600
+Processing by UsersController#new as HTML
+  Parameters: {"authenticity_token"=>"g+j9QXmMaMXbSHTkTbUVbgUG6+mJihxSmqtrXNrnuQcJG9xAthLwiVh8cX9vPhvoG9J4E4TOpqzAzcx+DYytVg==", "username"=>"userHTML", "email"=>"insta@test.com", "password"=>"[FILTERED]"}
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 3.7ms | Allocations: 140)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 116ms (Views: 84.5ms | ActiveRecord: 0.0ms | Allocations: 4998)
+
+
+Started GET "/users/new_user?authenticity_token=3k%2Bx%2FQKsrhN0ceVkhRr3T4pAE3ic07t08jyXf9D0%2F5VUvJD8zTI2X%2FdF4P%2BnkfnJlJSAgpGXAYqoWjBdB5%2FrxA%3D%3D&username=userHTML&email=insta%40test.com&password=[FILTERED]" for ::1 at 2021-01-22 11:25:48 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/users/new_user"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/users/new?authenticity_token=g%2Bj9QXmMaMXbSHTkTbUVbgUG6%2BmJihxSmqtrXNrnuQcJG9xAthLwiVh8cX9vPhvoG9J4E4TOpqzAzcx%2BDYytVg%3D%3D&username=userHTML&email=insta%40test.com&password=[FILTERED]" for ::1 at 2021-01-22 11:26:18 -0600
+Processing by UsersController#new as HTML
+  Parameters: {"authenticity_token"=>"g+j9QXmMaMXbSHTkTbUVbgUG6+mJihxSmqtrXNrnuQcJG9xAthLwiVh8cX9vPhvoG9J4E4TOpqzAzcx+DYytVg==", "username"=>"userHTML", "email"=>"insta@test.com", "password"=>"[FILTERED]"}
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.7ms | Allocations: 135)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 34ms (Views: 31.1ms | ActiveRecord: 0.0ms | Allocations: 4974)
+
+
+Started GET "/users/new_user_path?authenticity_token=0a2ncmznLUxlAVjr8aXaX233OOcuzjhwXGmlzTMWLYVbXoZzo3m1AOY1XXDTLtTZcyOrHSOKgo4GDwLv5H051A%3D%3D&username=UserHTML&email=insta%40test.com&password=[FILTERED]" for ::1 at 2021-01-22 11:26:25 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/users/new_user_path"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/users/new_user_path?authenticity_token=0a2ncmznLUxlAVjr8aXaX233OOcuzjhwXGmlzTMWLYVbXoZzo3m1AOY1XXDTLtTZcyOrHSOKgo4GDwLv5H051A%3D%3D&username=UserHTML&email=insta%40test.com&password=[FILTERED]" for ::1 at 2021-01-22 11:26:51 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/users/new_user_path"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/users/new?authenticity_token=g%2Bj9QXmMaMXbSHTkTbUVbgUG6%2BmJihxSmqtrXNrnuQcJG9xAthLwiVh8cX9vPhvoG9J4E4TOpqzAzcx%2BDYytVg%3D%3D&username=userHTML&email=insta%40test.com&password=[FILTERED]" for ::1 at 2021-01-22 11:26:56 -0600
+Processing by UsersController#new as HTML
+  Parameters: {"authenticity_token"=>"g+j9QXmMaMXbSHTkTbUVbgUG6+mJihxSmqtrXNrnuQcJG9xAthLwiVh8cX9vPhvoG9J4E4TOpqzAzcx+DYytVg==", "username"=>"userHTML", "email"=>"insta@test.com", "password"=>"[FILTERED]"}
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 20.7ms | Allocations: 135)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 86ms (Views: 75.4ms | ActiveRecord: 0.0ms | Allocations: 4988)
+
+
+Started GET "/users/new_user_url?authenticity_token=WUzADl6h5owwpOPnEmBf02zfb0Wj%2B8xl5fyVy9WxzNTTv%2BEPkT9%2BwLOQ5nww61FVcgv8v66%2Fdpu%2FmjLpAtrYhQ%3D%3D&username=UserHTML&email=insta%40test.com&password=[FILTERED]" for ::1 at 2021-01-22 11:27:10 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/users/new_user_url"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/users/new?authenticity_token=g%2Bj9QXmMaMXbSHTkTbUVbgUG6%2BmJihxSmqtrXNrnuQcJG9xAthLwiVh8cX9vPhvoG9J4E4TOpqzAzcx%2BDYytVg%3D%3D&username=userHTML&email=insta%40test.com&password=[FILTERED]" for ::1 at 2021-01-22 11:27:44 -0600
+Processing by UsersController#new as HTML
+  Parameters: {"authenticity_token"=>"g+j9QXmMaMXbSHTkTbUVbgUG6+mJihxSmqtrXNrnuQcJG9xAthLwiVh8cX9vPhvoG9J4E4TOpqzAzcx+DYytVg==", "username"=>"userHTML", "email"=>"insta@test.com", "password"=>"[FILTERED]"}
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 135)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 61ms (Views: 51.2ms | ActiveRecord: 0.0ms | Allocations: 4980)
+
+
+Started GET "/users/users?authenticity_token=JC7cXzTkMcHD5k9WPNmy8DzdsolBAlopMTKL9zVkrpOu3f1e%2B3qpjUDSSs0eUrx2Igkhc0xG4NdrVCzV4g%2B6wg%3D%3D&username=UserHTML&email=insta%40test.com&password=[FILTERED]" for ::1 at 2021-01-22 11:27:57 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/users/users"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/users/new?authenticity_token=g%2Bj9QXmMaMXbSHTkTbUVbgUG6%2BmJihxSmqtrXNrnuQcJG9xAthLwiVh8cX9vPhvoG9J4E4TOpqzAzcx%2BDYytVg%3D%3D&username=userHTML&email=insta%40test.com&password=[FILTERED]" for ::1 at 2021-01-22 11:28:55 -0600
+Processing by UsersController#new as HTML
+  Parameters: {"authenticity_token"=>"g+j9QXmMaMXbSHTkTbUVbgUG6+mJihxSmqtrXNrnuQcJG9xAthLwiVh8cX9vPhvoG9J4E4TOpqzAzcx+DYytVg==", "username"=>"userHTML", "email"=>"insta@test.com", "password"=>"[FILTERED]"}
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 350.4ms | Allocations: 135)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 415ms (Views: 410.1ms | ActiveRecord: 0.0ms | Allocations: 4982)
+
+
+Started GET "/users/new?authenticity_token=qb8oidIqoQTJkZ5RoAsiPWP7n%2BADseOwBsHyxHQ6xiMjTAmIHbQ5SEqlm8qCgCy7fS8MGg71WU5cp1Xmo1HScg%3D%3D&username=UserHTML&email=insta%40test.com&password=[FILTERED]" for ::1 at 2021-01-22 11:29:07 -0600
+Processing by UsersController#new as HTML
+  Parameters: {"authenticity_token"=>"qb8oidIqoQTJkZ5RoAsiPWP7n+ADseOwBsHyxHQ6xiMjTAmIHbQ5SEqlm8qCgCy7fS8MGg71WU5cp1Xmo1HScg==", "username"=>"UserHTML", "email"=>"insta@test.com", "password"=>"[FILTERED]"}
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 134)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 24ms (Views: 21.4ms | ActiveRecord: 0.0ms | Allocations: 4988)
+
+
+Started GET "/users/new?authenticity_token=qb8oidIqoQTJkZ5RoAsiPWP7n%2BADseOwBsHyxHQ6xiMjTAmIHbQ5SEqlm8qCgCy7fS8MGg71WU5cp1Xmo1HScg%3D%3D&username=UserHTML&email=insta%40test.com&password=[FILTERED]" for ::1 at 2021-01-22 11:31:03 -0600
+Processing by UsersController#new as HTML
+  Parameters: {"authenticity_token"=>"qb8oidIqoQTJkZ5RoAsiPWP7n+ADseOwBsHyxHQ6xiMjTAmIHbQ5SEqlm8qCgCy7fS8MGg71WU5cp1Xmo1HScg==", "username"=>"UserHTML", "email"=>"insta@test.com", "password"=>"[FILTERED]"}
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 135)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 47ms (Views: 43.4ms | ActiveRecord: 0.0ms | Allocations: 4979)
+
+
+Started GET "/users/new?authenticity_token=qye1AMQ%2FZvoNzYnwIa8C2I2FbXUiXAQdD0DtsnL1ZpUh1JQBC6H%2Bto75jGsDJAxek1H%2Bjy8YvuNVJkqQpZ5yxA%3D%3D&username=UserHTML&email=insta%40test.com&password=[FILTERED]" for ::1 at 2021-01-22 11:31:10 -0600
+Processing by UsersController#new as HTML
+  Parameters: {"authenticity_token"=>"qye1AMQ/ZvoNzYnwIa8C2I2FbXUiXAQdD0DtsnL1ZpUh1JQBC6H+to75jGsDJAxek1H+jy8YvuNVJkqQpZ5yxA==", "username"=>"UserHTML", "email"=>"insta@test.com", "password"=>"[FILTERED]"}
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.2ms | Allocations: 22)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 24ms (Views: 18.1ms | ActiveRecord: 0.0ms | Allocations: 3952)
+
+
+Started GET "/users/new?authenticity_token=qye1AMQ%2FZvoNzYnwIa8C2I2FbXUiXAQdD0DtsnL1ZpUh1JQBC6H%2Bto75jGsDJAxek1H%2Bjy8YvuNVJkqQpZ5yxA%3D%3D&username=UserHTML&email=insta%40test.com&password=[FILTERED]" for ::1 at 2021-01-22 11:31:32 -0600
+Processing by UsersController#new as HTML
+  Parameters: {"authenticity_token"=>"qye1AMQ/ZvoNzYnwIa8C2I2FbXUiXAQdD0DtsnL1ZpUh1JQBC6H+to75jGsDJAxek1H+jy8YvuNVJkqQpZ5yxA==", "username"=>"UserHTML", "email"=>"insta@test.com", "password"=>"[FILTERED]"}
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.8ms | Allocations: 135)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 46ms (Views: 40.6ms | ActiveRecord: 0.0ms | Allocations: 4983)
+
+
+Started POST "/users/new" for ::1 at 2021-01-22 11:31:40 -0600
+Processing by UsersController#new as HTML
+  Parameters: {"authenticity_token"=>"0YjF2LS/KtANHhSMFFul1fcCLXkz9gPJY2hv9JespYJbe+TZeyGynI4qERc20KtT6da+gz6yuTc5DsjWQMex0w==", "username"=>"insta@test.com", "email"=>"insta@test.com", "password"=>"[FILTERED]"}
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.3ms | Allocations: 23)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 22ms (Views: 18.2ms | ActiveRecord: 0.0ms | Allocations: 3991)
+
+
+Started GET "/users/new" for ::1 at 2021-01-22 11:31:54 -0600
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.9ms | Allocations: 135)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 54ms (Views: 50.6ms | ActiveRecord: 0.0ms | Allocations: 4979)
+
+
+Started POST "/users/users" for ::1 at 2021-01-22 11:32:01 -0600
+  
+ActionController::RoutingError (No route matches [POST] "/users/users"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started POST "/users/users" for ::1 at 2021-01-22 11:32:35 -0600
+  
+ActionController::RoutingError (No route matches [POST] "/users/users"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started POST "/users/users" for ::1 at 2021-01-22 11:32:52 -0600
+  
+ActionController::RoutingError (No route matches [POST] "/users/users"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started POST "/users/users" for ::1 at 2021-01-22 11:33:01 -0600
+  
+ActionController::RoutingError (No route matches [POST] "/users/users"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/users/new" for ::1 at 2021-01-22 11:34:23 -0600
+  [1m[35m (3.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 135)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 207ms (Views: 159.5ms | ActiveRecord: 1.7ms | Allocations: 9468)
+
+
+Started POST "/users/new" for ::1 at 2021-01-22 11:34:33 -0600
+Processing by UsersController#new as HTML
+  Parameters: {"authenticity_token"=>"ZN3SjuuPpRbRijDzjdnglQ5r3Sy1U2mfbaoI1SkAsMTuLvOPJBE9WlK+NWivUu4TEL9O1rgX02E3zK/3/muklQ==", "username"=>"UserHTML", "email"=>"insta@test.com", "password"=>"[FILTERED]"}
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.3ms | Allocations: 22)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 21ms (Views: 18.7ms | ActiveRecord: 0.0ms | Allocations: 3981)
+
+
+Started GET "/users/new" for ::1 at 2021-01-22 11:34:56 -0600
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.0ms | Allocations: 135)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 49ms (Views: 46.2ms | ActiveRecord: 0.0ms | Allocations: 4981)
+
+
+Started POST "/users/new" for ::1 at 2021-01-22 11:35:03 -0600
+Processing by UsersController#new as HTML
+  Parameters: {"authenticity_token"=>"74/hsTBXGmcIqGdgJpQHKfHATszVPMP11+nYAE42ouplfMCw/8mCK4ucYvsEHwmv7xTdNth4eQuNj38imV22uw==", "username"=>"UserHTML", "email"=>"insta@test.com", "password"=>"[FILTERED]"}
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.3ms | Allocations: 22)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 61ms (Views: 53.6ms | ActiveRecord: 0.0ms | Allocations: 3981)
+
+
+Started GET "/users/new" for ::1 at 2021-01-22 11:35:39 -0600
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.3ms | Allocations: 23)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 203ms (Views: 80.8ms | ActiveRecord: 49.9ms | Allocations: 8554)
+
+
+Started POST "/users/new" for ::1 at 2021-01-22 11:35:47 -0600
+  
+ActionController::RoutingError (No route matches [POST] "/users/new"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started POST "/users/new" for ::1 at 2021-01-22 11:36:13 -0600
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#new as HTML
+  Parameters: {"authenticity_token"=>"vUlbRvVZIiVUFXjj5KwEePbjAXeHJ0SOsLbpcw5lo0E3unpHOse6adchfXjGJwr+6DeSjYpj/nDq0E5R2Q63EA==", "username"=>"UserHTML", "email"=>"insta@test.com", "password"=>"[FILTERED]"}
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 6.0ms | Allocations: 23)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 89ms (Views: 30.7ms | ActiveRecord: 2.4ms | Allocations: 8624)
+
+
+Started POST "/users/new" for ::1 at 2021-01-22 11:36:21 -0600
+Processing by UsersController#new as HTML
+  Parameters: {"authenticity_token"=>"EnDyvMzDUw0eVEZXofhKE72CuO7eh7baVUpUn5PF82KYg9O9A13LQZ1gQ8yDc0SVo1YrFNPDDCQPLPO9RK7nMw==", "username"=>"UserHTML", "email"=>"insta@test.com", "password"=>"[FILTERED]"}
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 22)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 28ms (Views: 26.4ms | ActiveRecord: 0.0ms | Allocations: 3981)
+
+
+Started GET "/users/new" for ::1 at 2021-01-22 11:36:43 -0600
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 3.1ms | Allocations: 135)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 51ms (Views: 47.7ms | ActiveRecord: 0.0ms | Allocations: 4988)
+
+
+Started GET "/users/new?authenticity_token=wVfcIaaGHfjy3b%2BOY6wVXH77hNpGuuoU3b%2FApoSetvdLpP0gaRiFtHHpuhVBJxvaYC8XIEv%2BUOqH2WeEU%2FWipg%3D%3D&username=UserHTML&email=insta%40test.com&password=[FILTERED]" for ::1 at 2021-01-22 11:36:48 -0600
+Processing by UsersController#new as HTML
+  Parameters: {"authenticity_token"=>"wVfcIaaGHfjy3b+OY6wVXH77hNpGuuoU3b/ApoSetvdLpP0gaRiFtHHpuhVBJxvaYC8XIEv+UOqH2WeEU/Wipg==", "username"=>"UserHTML", "email"=>"insta@test.com", "password"=>"[FILTERED]"}
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 22)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 20ms (Views: 17.9ms | ActiveRecord: 0.0ms | Allocations: 3942)
+
+
+Started GET "/users/new?authenticity_token=wVfcIaaGHfjy3b%2BOY6wVXH77hNpGuuoU3b%2FApoSetvdLpP0gaRiFtHHpuhVBJxvaYC8XIEv%2BUOqH2WeEU%2FWipg%3D%3D&username=UserHTML&email=insta%40test.com&password=[FILTERED]" for ::1 at 2021-01-22 11:37:31 -0600
+Processing by UsersController#new as HTML
+  Parameters: {"authenticity_token"=>"wVfcIaaGHfjy3b+OY6wVXH77hNpGuuoU3b/ApoSetvdLpP0gaRiFtHHpuhVBJxvaYC8XIEv+UOqH2WeEU/Wipg==", "username"=>"UserHTML", "email"=>"insta@test.com", "password"=>"[FILTERED]"}
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 134)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 67ms (Views: 61.3ms | ActiveRecord: 0.0ms | Allocations: 4982)
+
+
+Started POST "/users/users" for ::1 at 2021-01-22 11:37:36 -0600
+  
+ActionController::RoutingError (No route matches [POST] "/users/users"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/users/new?authenticity_token=wVfcIaaGHfjy3b%2BOY6wVXH77hNpGuuoU3b%2FApoSetvdLpP0gaRiFtHHpuhVBJxvaYC8XIEv%2BUOqH2WeEU%2FWipg%3D%3D&username=UserHTML&email=insta%40test.com&password=[FILTERED]" for ::1 at 2021-01-22 11:38:22 -0600
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#new as HTML
+  Parameters: {"authenticity_token"=>"wVfcIaaGHfjy3b+OY6wVXH77hNpGuuoU3b/ApoSetvdLpP0gaRiFtHHpuhVBJxvaYC8XIEv+UOqH2WeEU/Wipg==", "username"=>"UserHTML", "email"=>"insta@test.com", "password"=>"[FILTERED]"}
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 139)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 350ms (Views: 57.1ms | ActiveRecord: 7.4ms | Allocations: 9480)
+
+
+Started POST "/users/new?authenticity_token=wVfcIaaGHfjy3b%2BOY6wVXH77hNpGuuoU3b%2FApoSetvdLpP0gaRiFtHHpuhVBJxvaYC8XIEv%2BUOqH2WeEU%2FWipg%3D%3D&username=UserHTML&email=insta%40test.com&password=[FILTERED]" for ::1 at 2021-01-22 11:38:36 -0600
+  
+ActionController::RoutingError (No route matches [POST] "/users/new"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started POST "/users/new?authenticity_token=wVfcIaaGHfjy3b%2BOY6wVXH77hNpGuuoU3b%2FApoSetvdLpP0gaRiFtHHpuhVBJxvaYC8XIEv%2BUOqH2WeEU%2FWipg%3D%3D&username=UserHTML&email=insta%40test.com&password=[FILTERED]" for ::1 at 2021-01-22 11:39:14 -0600
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#new as HTML
+  Parameters: {"authenticity_token"=>"wVfcIaaGHfjy3b+OY6wVXH77hNpGuuoU3b/ApoSetvdLpP0gaRiFtHHpuhVBJxvaYC8XIEv+UOqH2WeEU/Wipg==", "username"=>"UserHTML", "email"=>"insta@test.com", "password"=>"[FILTERED]"}
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.3ms | Allocations: 23)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 65ms (Views: 24.6ms | ActiveRecord: 2.2ms | Allocations: 8590)
+
+
+Started GET "/users/new?authenticity_token=wVfcIaaGHfjy3b%2BOY6wVXH77hNpGuuoU3b%2FApoSetvdLpP0gaRiFtHHpuhVBJxvaYC8XIEv%2BUOqH2WeEU%2FWipg%3D%3D&username=UserHTML&email=insta%40test.com&password=[FILTERED]" for ::1 at 2021-01-22 11:39:55 -0600
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#new as HTML
+  Parameters: {"authenticity_token"=>"wVfcIaaGHfjy3b+OY6wVXH77hNpGuuoU3b/ApoSetvdLpP0gaRiFtHHpuhVBJxvaYC8XIEv+UOqH2WeEU/Wipg==", "username"=>"UserHTML", "email"=>"insta@test.com", "password"=>"[FILTERED]"}
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.6ms | Allocations: 23)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 64ms (Views: 40.4ms | ActiveRecord: 2.2ms | Allocations: 8551)
+
+
+Started POST "/users/new?authenticity_token=wVfcIaaGHfjy3b%2BOY6wVXH77hNpGuuoU3b%2FApoSetvdLpP0gaRiFtHHpuhVBJxvaYC8XIEv%2BUOqH2WeEU%2FWipg%3D%3D&username=UserHTML&email=insta%40test.com&password=[FILTERED]" for ::1 at 2021-01-22 11:40:00 -0600
+Processing by UsersController#new as HTML
+  Parameters: {"authenticity_token"=>"wVfcIaaGHfjy3b+OY6wVXH77hNpGuuoU3b/ApoSetvdLpP0gaRiFtHHpuhVBJxvaYC8XIEv+UOqH2WeEU/Wipg==", "username"=>"UserHTML", "email"=>"insta@test.com", "password"=>"[FILTERED]"}
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.3ms | Allocations: 22)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 19ms (Views: 11.2ms | ActiveRecord: 0.0ms | Allocations: 3976)
+
+
+Started GET "/users/new?authenticity_token=wVfcIaaGHfjy3b%2BOY6wVXH77hNpGuuoU3b%2FApoSetvdLpP0gaRiFtHHpuhVBJxvaYC8XIEv%2BUOqH2WeEU%2FWipg%3D%3D&username=UserHTML&email=insta%40test.com&password=[FILTERED]" for ::1 at 2021-01-22 11:40:51 -0600
+Processing by UsersController#new as HTML
+  Parameters: {"authenticity_token"=>"wVfcIaaGHfjy3b+OY6wVXH77hNpGuuoU3b/ApoSetvdLpP0gaRiFtHHpuhVBJxvaYC8XIEv+UOqH2WeEU/Wipg==", "username"=>"UserHTML", "email"=>"insta@test.com", "password"=>"[FILTERED]"}
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 140)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 36ms (Views: 29.6ms | ActiveRecord: 0.0ms | Allocations: 4997)
+
+
+Started POST "/users/users" for ::1 at 2021-01-22 11:40:59 -0600
+  
+ActionController::RoutingError (No route matches [POST] "/users/users"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started POST "/users/users" for ::1 at 2021-01-22 11:41:43 -0600
+  
+ActionController::RoutingError (No route matches [POST] "/users/users"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/users/new?authenticity_token=wVfcIaaGHfjy3b%2BOY6wVXH77hNpGuuoU3b%2FApoSetvdLpP0gaRiFtHHpuhVBJxvaYC8XIEv%2BUOqH2WeEU%2FWipg%3D%3D&username=UserHTML&email=insta%40test.com&password=[FILTERED]" for ::1 at 2021-01-22 11:41:49 -0600
+Processing by UsersController#new as HTML
+  Parameters: {"authenticity_token"=>"wVfcIaaGHfjy3b+OY6wVXH77hNpGuuoU3b/ApoSetvdLpP0gaRiFtHHpuhVBJxvaYC8XIEv+UOqH2WeEU/Wipg==", "username"=>"UserHTML", "email"=>"insta@test.com", "password"=>"[FILTERED]"}
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 5.6ms | Allocations: 135)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 57ms (Views: 52.6ms | ActiveRecord: 0.0ms | Allocations: 4979)
+
+
+Started POST "/users/users_path" for ::1 at 2021-01-22 11:41:55 -0600
+  
+ActionController::RoutingError (No route matches [POST] "/users/users_path"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started POST "/users/users_path" for ::1 at 2021-01-22 11:42:26 -0600
+  
+ActionController::RoutingError (No route matches [POST] "/users/users_path"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started POST "/users/users_path" for ::1 at 2021-01-22 11:43:01 -0600
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActionController::RoutingError (No route matches [POST] "/users/users_path"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started POST "/users/users_path" for ::1 at 2021-01-22 11:43:30 -0600
+  
+ActionController::RoutingError (No route matches [POST] "/users/users_path"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/users/new?authenticity_token=wVfcIaaGHfjy3b%2BOY6wVXH77hNpGuuoU3b%2FApoSetvdLpP0gaRiFtHHpuhVBJxvaYC8XIEv%2BUOqH2WeEU%2FWipg%3D%3D&username=UserHTML&email=insta%40test.com&password=[FILTERED]" for ::1 at 2021-01-22 11:44:09 -0600
+  [1m[35m (5.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#new as HTML
+  Parameters: {"authenticity_token"=>"wVfcIaaGHfjy3b+OY6wVXH77hNpGuuoU3b/ApoSetvdLpP0gaRiFtHHpuhVBJxvaYC8XIEv+UOqH2WeEU/Wipg==", "username"=>"UserHTML", "email"=>"insta@test.com", "password"=>"[FILTERED]"}
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 6.3ms | Allocations: 267)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 203ms (Views: 81.0ms | ActiveRecord: 2.3ms | Allocations: 12649)
+
+
+Started POST "/users/new" for ::1 at 2021-01-22 11:44:14 -0600
+Processing by UsersController#new as HTML
+  Parameters: {"authenticity_token"=>"SoT43+/ERNhBeRWjLR8wnVcEtY8oZR9DWPJmzkIA4X7Ad9neIFrclMJNEDgPlD4bSdAmdSUhpb0ClMHslWv1Lw==", "username"=>"UserHTML", "email"=>"insta@test.com", "password"=>"[FILTERED]"}
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.2ms | Allocations: 23)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 17ms (Views: 15.1ms | ActiveRecord: 0.0ms | Allocations: 4004)
+
+
+Started GET "/users/new" for ::1 at 2021-01-22 11:45:22 -0600
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 23)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 234ms (Views: 112.0ms | ActiveRecord: 1.4ms | Allocations: 8557)
+
+
+Started POST "/users/new" for ::1 at 2021-01-22 11:45:30 -0600
+  
+ActionController::RoutingError (No route matches [POST] "/users/new"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/users/new" for ::1 at 2021-01-22 11:46:17 -0600
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 134)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 77ms (Views: 50.5ms | ActiveRecord: 1.4ms | Allocations: 9466)
+
+
+Started POST "/users/new" for ::1 at 2021-01-22 11:46:21 -0600
+Processing by UsersController#new as HTML
+  Parameters: {"authenticity_token"=>"CGYK6nb8s4aISg7zFeCJj1mZprm8HmJhdrOmfP7Ytl2ClSvruWIrygt+C2g3a4cJR001Q7Fa2J8s1QFeKbOiDA==", "username"=>"UserHTML", "email"=>"insta@test.com", "password"=>"[FILTERED]"}
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.2ms | Allocations: 22)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 18ms (Views: 15.7ms | ActiveRecord: 0.0ms | Allocations: 3983)
+
+
+Started GET "/users/new" for ::1 at 2021-01-22 11:46:54 -0600
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.7ms | Allocations: 136)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 49ms (Views: 46.9ms | ActiveRecord: 0.0ms | Allocations: 4993)
+
+
+Started POST "/" for ::1 at 2021-01-22 11:47:00 -0600
+  
+ActionController::RoutingError (No route matches [POST] "/"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/users/new" for ::1 at 2021-01-22 11:47:28 -0600
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 56.7ms | Allocations: 140)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 105ms (Views: 102.4ms | ActiveRecord: 0.0ms | Allocations: 4992)
+
+
+Started POST "/" for ::1 at 2021-01-22 11:47:33 -0600
+  
+ActionController::RoutingError (No route matches [POST] "/"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/users/new" for ::1 at 2021-01-22 11:48:11 -0600
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 135)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 133ms (Views: 35.7ms | ActiveRecord: 1.2ms | Allocations: 9475)
+
+
+Started POST "/new" for ::1 at 2021-01-22 11:48:18 -0600
+  
+ActionController::RoutingError (No route matches [POST] "/new"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started POST "/new" for ::1 at 2021-01-22 11:48:39 -0600
+  
+ActionController::RoutingError (No route matches [POST] "/new"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/users/new" for ::1 at 2021-01-22 11:49:10 -0600
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 135)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 56ms (Views: 52.9ms | ActiveRecord: 0.0ms | Allocations: 4990)
+
+
+Started POST "/users" for ::1 at 2021-01-22 11:49:14 -0600
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"tXjgznD0jL5wXr6oeRzy1ADu/yln38g60burXFKhvpc/i8HPv2oU8vNquzNbl/xSHjps02qbcsSL3Qx+hcqqxg==", "username"=>"UserHTML", "email"=>"insta@test.com", "password"=>"[FILTERED]"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:11:in `create'
+  [1m[36mUser Create (3.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["username", "UserHTML"], ["email", "insta@test.com"], ["password", "iamsunt6"], ["created_at", "2021-01-22 17:49:14.855018"], ["updated_at", "2021-01-22 17:49:14.855018"]]
+  ↳ app/controllers/users_controller.rb:11:in `create'
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:11:in `create'
+Redirected to http://localhost:3000/users/new
+Completed 302 Found in 59ms (ActiveRecord: 4.6ms | Allocations: 2889)
+
+
+Started GET "/users/new" for ::1 at 2021-01-22 11:49:14 -0600
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.2ms | Allocations: 22)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 26ms (Views: 23.0ms | ActiveRecord: 0.0ms | Allocations: 3948)
+
+
+Started POST "/users" for ::1 at 2021-01-22 11:50:06 -0600
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"9s5oEObuM7Zblfh394VOhiGy2ak0V/L+8mlUZFYM8vx8PUkRKXCr+tih/ezVDkAAP2ZKUzkTSACoD/NGgWfmrQ==", "username"=>"UserHTML2", "email"=>"insta@test.com", "password"=>"[FILTERED]"}
+Completed 400 Bad Request in 11ms (ActiveRecord: 0.0ms | Allocations: 1055)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: user):
+  
+app/controllers/users_controller.rb:21:in `user_params'
+app/controllers/users_controller.rb:9:in `create'
+Started GET "/users/new" for ::1 at 2021-01-22 11:52:34 -0600
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 4.2ms | Allocations: 135)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 149ms (Views: 84.6ms | ActiveRecord: 2.3ms | Allocations: 9478)
+
+
+Started POST "/users" for ::1 at 2021-01-22 11:52:52 -0600
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"71NEqTUalyb1OntkXer8kiMsr5FBwoPnxw8zzcMCWz5loGWo+oQPanYOfv9/YfIUPfg8a0yGORmdaZTvFGlPbw==", "user"=>{"username"=>"userHTML2", "email"=>"Josediazt6@outlook.com", "password"=>"[FILTERED]"}}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:11:in `create'
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["username", "userHTML2"], ["email", "Josediazt6@outlook.com"], ["password", "iamsunt6"], ["created_at", "2021-01-22 17:52:52.219180"], ["updated_at", "2021-01-22 17:52:52.219180"]]
+  ↳ app/controllers/users_controller.rb:11:in `create'
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:11:in `create'
+Redirected to http://localhost:3000/users/new
+Completed 302 Found in 16ms (ActiveRecord: 2.6ms | Allocations: 2758)
+
+
+Started GET "/users/new" for ::1 at 2021-01-22 11:52:52 -0600
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.3ms | Allocations: 22)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 40ms (Views: 38.4ms | ActiveRecord: 0.0ms | Allocations: 3952)
+
+
+Started GET "/users/new" for ::1 at 2021-01-22 11:53:26 -0600
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 135)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 62ms (Views: 59.5ms | ActiveRecord: 0.0ms | Allocations: 4978)
+
+
+Started POST "/users" for ::1 at 2021-01-22 11:53:36 -0600
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"kY5LVmmIlLP26B2OJgVWZ4nWGvtRWmJnL7zb3YoajucbfWpXphYM/3XcGBUEjljhlwKJAVwe2Jl12nz/XXGatg==", "user"=>{"username"=>"insta@test.com", "email"=>"", "password"=>"[FILTERED]"}}
+  [1m[35m (0.8ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:11:in `create'
+  [1m[36mUser Create (1.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["username", "insta@test.com"], ["email", ""], ["password", "iamsunt6"], ["created_at", "2021-01-22 17:53:36.477384"], ["updated_at", "2021-01-22 17:53:36.477384"]]
+  ↳ app/controllers/users_controller.rb:11:in `create'
+  [1m[35m (2.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:11:in `create'
+Redirected to http://localhost:3000/users/new
+Completed 302 Found in 20ms (ActiveRecord: 5.1ms | Allocations: 2698)
+
+
+Started GET "/users/new" for ::1 at 2021-01-22 11:53:36 -0600
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.3ms | Allocations: 22)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 18ms (Views: 15.3ms | ActiveRecord: 0.0ms | Allocations: 3947)
+
+
