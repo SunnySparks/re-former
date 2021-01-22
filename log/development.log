@@ -6560,3 +6560,773 @@ Processing by UsersController#create as JS
 Completed 200 OK in 18ms (Views: 5.9ms | ActiveRecord: 1.9ms | Allocations: 3032)
 
 
+Started GET "/users" for ::1 at 2021-01-22 15:33:22 -0600
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/users/new" for ::1 at 2021-01-22 15:33:26 -0600
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 82.1ms | Allocations: 2006)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 631ms (Views: 504.6ms | ActiveRecord: 1.2ms | Allocations: 13688)
+
+
+Started POST "/users" for ::1 at 2021-01-22 15:33:34 -0600
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"IR7MoSSMOa8340rsOnQA1fTEcvxQCtDh8rJ7+BGlUW2r7e2g6xKh47TXT3cY/w5T6hDhBl1Oah+o1Nzaxs5FPA==", "user"=>{"username"=>"insta@test.com", "email"=>"Josediazt6@outlook.com", "password"=>"[FILTERED]"}, "commit"=>"Create User"}
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 480)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 30ms (Views: 18.6ms | ActiveRecord: 0.0ms | Allocations: 5683)
+
+
+Started GET "/users/new" for ::1 at 2021-01-22 15:36:06 -0600
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 28.4ms | Allocations: 1082)
+Completed 500 Internal Server Error in 283ms (ActiveRecord: 0.0ms | Allocations: 2318)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1> This is the Registration page </h1>
+
+<%= form_for (@user, url: /users) do |f| %>
+  Username: <%= f.text_field :username %><br />
+  <p>
+  e-mail: <%= email_field("user", "email")%><br />
+  <p>
+  Password: <%= password_field(:user, :password) %><br />
+  <p>
+  <%= f.submit %>
+<% end %>
+
+
+):
+1:    <h1> This is the Registration page </h1>
+2:    
+3:    <%= form_for (@user, url: /users) do |f| %>
+4:      Username: <%= f.text_field :username %><br />
+5:      <p>
+6:      e-mail: <%= email_field("user", "email")%><br />
+7:      <p>
+8:      Password: <%= password_field(:user, :password) %><br />
+9:      <p>
+10:      <%= f.submit %>
+11:    <% end %>
+  
+app/views/users/new.html.erb:3: syntax error, unexpected tLABEL, expecting '='
+app/views/users/new.html.erb:4: unmatched close parenthesis: /users) do |f| @output_buffer.safe_append='
+app/views/users/new.html.erb:5: syntax error, unexpected '<'
+app/views/users/new.html.erb:6: syntax error, unexpected ':', expecting end
+app/views/users/new.html.erb:6: syntax error, unexpected tREGEXP_BEG, expecting do or '{' or '('
+app/views/users/new.html.erb:9: syntax error, unexpected '<'
+app/views/users/new.html.erb:14: unterminated string meets end of file
+app/views/users/new.html.erb:14: syntax error, unexpected end-of-input, expecting end
+app/views/users/new.html.erb:3: syntax error, unexpected tLABEL, expecting '='
+app/views/users/new.html.erb:4: unmatched close parenthesis: /users) do |f| @output_buffer.safe_append='
+app/views/users/new.html.erb:5: syntax error, unexpected '<'
+app/views/users/new.html.erb:6: syntax error, unexpected ':', expecting end
+app/views/users/new.html.erb:6: syntax error, unexpected tREGEXP_BEG, expecting do or '{' or '('
+app/views/users/new.html.erb:9: syntax error, unexpected '<'
+app/views/users/new.html.erb:14: unterminated string meets end of file
+app/views/users/new.html.erb:14: syntax error, unexpected end-of-input, expecting end
+app/views/users/new.html.erb:3: syntax error, unexpected tLABEL, expecting '='
+app/views/users/new.html.erb:4: unmatched close parenthesis: /users) do |f| @output_buffer.safe_append='
+app/views/users/new.html.erb:5: syntax error, unexpected '<'
+app/views/users/new.html.erb:6: syntax error, unexpected ':', expecting end
+app/views/users/new.html.erb:6: syntax error, unexpected tREGEXP_BEG, expecting do or '{' or '('
+app/views/users/new.html.erb:9: syntax error, unexpected '<'
+app/views/users/new.html.erb:14: unterminated string meets end of file
+app/views/users/new.html.erb:14: syntax error, unexpected end-of-input, expecting end
+app/views/users/new.html.erb:3: syntax error, unexpected tLABEL, expecting '='
+app/views/users/new.html.erb:4: unmatched close parenthesis: /users) do |f| @output_buffer.safe_append='
+app/views/users/new.html.erb:5: syntax error, unexpected '<'
+app/views/users/new.html.erb:6: syntax error, unexpected ':', expecting end
+app/views/users/new.html.erb:6: syntax error, unexpected tREGEXP_BEG, expecting do or '{' or '('
+app/views/users/new.html.erb:9: syntax error, unexpected '<'
+app/views/users/new.html.erb:14: unterminated string meets end of file
+app/views/users/new.html.erb:14: syntax error, unexpected end-of-input, expecting end
+app/views/users/new.html.erb:3: syntax error, unexpected tLABEL, expecting '='
+app/views/users/new.html.erb:4: unmatched close parenthesis: /users) do |f| @output_buffer.safe_append='
+app/views/users/new.html.erb:5: syntax error, unexpected '<'
+app/views/users/new.html.erb:6: syntax error, unexpected ':', expecting end
+app/views/users/new.html.erb:6: syntax error, unexpected tREGEXP_BEG, expecting do or '{' or '('
+app/views/users/new.html.erb:9: syntax error, unexpected '<'
+app/views/users/new.html.erb:14: unterminated string meets end of file
+app/views/users/new.html.erb:14: syntax error, unexpected end-of-input, expecting end
+app/views/users/new.html.erb:3: syntax error, unexpected tLABEL, expecting '='
+app/views/users/new.html.erb:4: unmatched close parenthesis: /users) do |f| @output_buffer.safe_append='
+app/views/users/new.html.erb:5: syntax error, unexpected '<'
+app/views/users/new.html.erb:6: syntax error, unexpected ':', expecting end
+app/views/users/new.html.erb:6: syntax error, unexpected tREGEXP_BEG, expecting do or '{' or '('
+app/views/users/new.html.erb:9: syntax error, unexpected '<'
+app/views/users/new.html.erb:14: unterminated string meets end of file
+app/views/users/new.html.erb:14: syntax error, unexpected end-of-input, expecting end
+Started GET "/users/new" for ::1 at 2021-01-22 15:37:28 -0600
+  [1m[35m (80.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (15.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 67.4ms | Allocations: 1502)
+Completed 500 Internal Server Error in 349ms (ActiveRecord: 1.3ms | Allocations: 8258)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1> This is the Registration page </h1>
+
+<%= form_for (@user, url: /users) do |f| %>
+  Username: <%= f.text_field :username %><br />
+  <p>
+  e-mail: <%= email_field("user", "email")%><br />
+  <p>
+  Password: <%= password_field(:user, :password) %><br />
+  <p>
+  <%= f.submit %>
+<% end %>
+
+
+):
+1:    <h1> This is the Registration page </h1>
+2:    
+3:    <%= form_for (@user, url: /users) do |f| %>
+4:      Username: <%= f.text_field :username %><br />
+5:      <p>
+6:      e-mail: <%= email_field("user", "email")%><br />
+7:      <p>
+8:      Password: <%= password_field(:user, :password) %><br />
+9:      <p>
+10:      <%= f.submit %>
+11:    <% end %>
+  
+app/views/users/new.html.erb:3: syntax error, unexpected tLABEL, expecting '='
+app/views/users/new.html.erb:4: unmatched close parenthesis: /users) do |f| @output_buffer.safe_append='
+app/views/users/new.html.erb:5: syntax error, unexpected '<'
+app/views/users/new.html.erb:6: syntax error, unexpected ':', expecting end
+app/views/users/new.html.erb:6: syntax error, unexpected tREGEXP_BEG, expecting do or '{' or '('
+app/views/users/new.html.erb:9: syntax error, unexpected '<'
+app/views/users/new.html.erb:14: unterminated string meets end of file
+app/views/users/new.html.erb:14: syntax error, unexpected end-of-input, expecting end
+app/views/users/new.html.erb:3: syntax error, unexpected tLABEL, expecting '='
+app/views/users/new.html.erb:4: unmatched close parenthesis: /users) do |f| @output_buffer.safe_append='
+app/views/users/new.html.erb:5: syntax error, unexpected '<'
+app/views/users/new.html.erb:6: syntax error, unexpected ':', expecting end
+app/views/users/new.html.erb:6: syntax error, unexpected tREGEXP_BEG, expecting do or '{' or '('
+app/views/users/new.html.erb:9: syntax error, unexpected '<'
+app/views/users/new.html.erb:14: unterminated string meets end of file
+app/views/users/new.html.erb:14: syntax error, unexpected end-of-input, expecting end
+app/views/users/new.html.erb:3: syntax error, unexpected tLABEL, expecting '='
+app/views/users/new.html.erb:4: unmatched close parenthesis: /users) do |f| @output_buffer.safe_append='
+app/views/users/new.html.erb:5: syntax error, unexpected '<'
+app/views/users/new.html.erb:6: syntax error, unexpected ':', expecting end
+app/views/users/new.html.erb:6: syntax error, unexpected tREGEXP_BEG, expecting do or '{' or '('
+app/views/users/new.html.erb:9: syntax error, unexpected '<'
+app/views/users/new.html.erb:14: unterminated string meets end of file
+app/views/users/new.html.erb:14: syntax error, unexpected end-of-input, expecting end
+app/views/users/new.html.erb:3: syntax error, unexpected tLABEL, expecting '='
+app/views/users/new.html.erb:4: unmatched close parenthesis: /users) do |f| @output_buffer.safe_append='
+app/views/users/new.html.erb:5: syntax error, unexpected '<'
+app/views/users/new.html.erb:6: syntax error, unexpected ':', expecting end
+app/views/users/new.html.erb:6: syntax error, unexpected tREGEXP_BEG, expecting do or '{' or '('
+app/views/users/new.html.erb:9: syntax error, unexpected '<'
+app/views/users/new.html.erb:14: unterminated string meets end of file
+app/views/users/new.html.erb:14: syntax error, unexpected end-of-input, expecting end
+app/views/users/new.html.erb:3: syntax error, unexpected tLABEL, expecting '='
+app/views/users/new.html.erb:4: unmatched close parenthesis: /users) do |f| @output_buffer.safe_append='
+app/views/users/new.html.erb:5: syntax error, unexpected '<'
+app/views/users/new.html.erb:6: syntax error, unexpected ':', expecting end
+app/views/users/new.html.erb:6: syntax error, unexpected tREGEXP_BEG, expecting do or '{' or '('
+app/views/users/new.html.erb:9: syntax error, unexpected '<'
+app/views/users/new.html.erb:14: unterminated string meets end of file
+app/views/users/new.html.erb:14: syntax error, unexpected end-of-input, expecting end
+app/views/users/new.html.erb:3: syntax error, unexpected tLABEL, expecting '='
+app/views/users/new.html.erb:4: unmatched close parenthesis: /users) do |f| @output_buffer.safe_append='
+app/views/users/new.html.erb:5: syntax error, unexpected '<'
+app/views/users/new.html.erb:6: syntax error, unexpected ':', expecting end
+app/views/users/new.html.erb:6: syntax error, unexpected tREGEXP_BEG, expecting do or '{' or '('
+app/views/users/new.html.erb:9: syntax error, unexpected '<'
+app/views/users/new.html.erb:14: unterminated string meets end of file
+app/views/users/new.html.erb:14: syntax error, unexpected end-of-input, expecting end
+Started GET "/users/new" for ::1 at 2021-01-22 15:38:05 -0600
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1089)
+Completed 500 Internal Server Error in 259ms (ActiveRecord: 0.0ms | Allocations: 23877)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1> This is the Registration page </h1>
+
+<%= form_for(@user, url: /users) do |f| %>
+  Username: <%= f.text_field :username %><br />
+  <p>
+  e-mail: <%= email_field("user", "email")%><br />
+  <p>
+  Password: <%= password_field(:user, :password) %><br />
+  <p>
+  <%= f.submit %>
+<% end %>
+
+
+):
+1:    <h1> This is the Registration page </h1>
+2:    
+3:    <%= form_for(@user, url: /users) do |f| %>
+4:      Username: <%= f.text_field :username %><br />
+5:      <p>
+6:      e-mail: <%= email_field("user", "email")%><br />
+7:      <p>
+8:      Password: <%= password_field(:user, :password) %><br />
+9:      <p>
+10:      <%= f.submit %>
+11:    <% end %>
+  
+app/views/users/new.html.erb:4: unmatched close parenthesis: /users) do |f| @output_buffer.safe_append='
+app/views/users/new.html.erb:5: syntax error, unexpected '<'
+app/views/users/new.html.erb:6: syntax error, unexpected ':', expecting end
+app/views/users/new.html.erb:6: syntax error, unexpected tREGEXP_BEG, expecting do or '{' or '('
+app/views/users/new.html.erb:9: syntax error, unexpected '<'
+app/views/users/new.html.erb:14: unterminated string meets end of file
+app/views/users/new.html.erb:14: syntax error, unexpected end-of-input, expecting end
+app/views/users/new.html.erb:4: unmatched close parenthesis: /users) do |f| @output_buffer.safe_append='
+app/views/users/new.html.erb:5: syntax error, unexpected '<'
+app/views/users/new.html.erb:6: syntax error, unexpected ':', expecting end
+app/views/users/new.html.erb:6: syntax error, unexpected tREGEXP_BEG, expecting do or '{' or '('
+app/views/users/new.html.erb:9: syntax error, unexpected '<'
+app/views/users/new.html.erb:14: unterminated string meets end of file
+app/views/users/new.html.erb:14: syntax error, unexpected end-of-input, expecting end
+app/views/users/new.html.erb:4: unmatched close parenthesis: /users) do |f| @output_buffer.safe_append='
+app/views/users/new.html.erb:5: syntax error, unexpected '<'
+app/views/users/new.html.erb:6: syntax error, unexpected ':', expecting end
+app/views/users/new.html.erb:6: syntax error, unexpected tREGEXP_BEG, expecting do or '{' or '('
+app/views/users/new.html.erb:9: syntax error, unexpected '<'
+app/views/users/new.html.erb:14: unterminated string meets end of file
+app/views/users/new.html.erb:14: syntax error, unexpected end-of-input, expecting end
+app/views/users/new.html.erb:4: unmatched close parenthesis: /users) do |f| @output_buffer.safe_append='
+app/views/users/new.html.erb:5: syntax error, unexpected '<'
+app/views/users/new.html.erb:6: syntax error, unexpected ':', expecting end
+app/views/users/new.html.erb:6: syntax error, unexpected tREGEXP_BEG, expecting do or '{' or '('
+app/views/users/new.html.erb:9: syntax error, unexpected '<'
+app/views/users/new.html.erb:14: unterminated string meets end of file
+app/views/users/new.html.erb:14: syntax error, unexpected end-of-input, expecting end
+app/views/users/new.html.erb:4: unmatched close parenthesis: /users) do |f| @output_buffer.safe_append='
+app/views/users/new.html.erb:5: syntax error, unexpected '<'
+app/views/users/new.html.erb:6: syntax error, unexpected ':', expecting end
+app/views/users/new.html.erb:6: syntax error, unexpected tREGEXP_BEG, expecting do or '{' or '('
+app/views/users/new.html.erb:9: syntax error, unexpected '<'
+app/views/users/new.html.erb:14: unterminated string meets end of file
+app/views/users/new.html.erb:14: syntax error, unexpected end-of-input, expecting end
+app/views/users/new.html.erb:4: unmatched close parenthesis: /users) do |f| @output_buffer.safe_append='
+app/views/users/new.html.erb:5: syntax error, unexpected '<'
+app/views/users/new.html.erb:6: syntax error, unexpected ':', expecting end
+app/views/users/new.html.erb:6: syntax error, unexpected tREGEXP_BEG, expecting do or '{' or '('
+app/views/users/new.html.erb:9: syntax error, unexpected '<'
+app/views/users/new.html.erb:14: unterminated string meets end of file
+app/views/users/new.html.erb:14: syntax error, unexpected end-of-input, expecting end
+Started GET "/users/new" for ::1 at 2021-01-22 15:39:35 -0600
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 31.4ms | Allocations: 1082)
+Completed 500 Internal Server Error in 373ms (ActiveRecord: 0.0ms | Allocations: 2319)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1> This is the Registration page </h1>
+
+<%= form_for(@user, url: /users) do |f| %>
+  Username: <%= f.text_field(:user, :username) %><br />
+  <p>
+  e-mail: <%= email_field("user", "email")%><br />
+  <p>
+  Password: <%= password_field(:user, :password) %><br />
+  <p>
+  <%= f.submit %>
+<% end %>
+
+
+):
+1:    <h1> This is the Registration page </h1>
+2:    
+3:    <%= form_for(@user, url: /users) do |f| %>
+4:      Username: <%= f.text_field(:user, :username) %><br />
+5:      <p>
+6:      e-mail: <%= email_field("user", "email")%><br />
+7:      <p>
+8:      Password: <%= password_field(:user, :password) %><br />
+9:      <p>
+10:      <%= f.submit %>
+11:    <% end %>
+  
+app/views/users/new.html.erb:4: unmatched close parenthesis: /users) do |f| @output_buffer.safe_append='
+app/views/users/new.html.erb:5: syntax error, unexpected '<'
+app/views/users/new.html.erb:6: syntax error, unexpected ':', expecting end
+app/views/users/new.html.erb:6: syntax error, unexpected tREGEXP_BEG, expecting do or '{' or '('
+app/views/users/new.html.erb:9: syntax error, unexpected '<'
+app/views/users/new.html.erb:14: unterminated string meets end of file
+app/views/users/new.html.erb:14: syntax error, unexpected end-of-input, expecting end
+app/views/users/new.html.erb:4: unmatched close parenthesis: /users) do |f| @output_buffer.safe_append='
+app/views/users/new.html.erb:5: syntax error, unexpected '<'
+app/views/users/new.html.erb:6: syntax error, unexpected ':', expecting end
+app/views/users/new.html.erb:6: syntax error, unexpected tREGEXP_BEG, expecting do or '{' or '('
+app/views/users/new.html.erb:9: syntax error, unexpected '<'
+app/views/users/new.html.erb:14: unterminated string meets end of file
+app/views/users/new.html.erb:14: syntax error, unexpected end-of-input, expecting end
+app/views/users/new.html.erb:4: unmatched close parenthesis: /users) do |f| @output_buffer.safe_append='
+app/views/users/new.html.erb:5: syntax error, unexpected '<'
+app/views/users/new.html.erb:6: syntax error, unexpected ':', expecting end
+app/views/users/new.html.erb:6: syntax error, unexpected tREGEXP_BEG, expecting do or '{' or '('
+app/views/users/new.html.erb:9: syntax error, unexpected '<'
+app/views/users/new.html.erb:14: unterminated string meets end of file
+app/views/users/new.html.erb:14: syntax error, unexpected end-of-input, expecting end
+app/views/users/new.html.erb:4: unmatched close parenthesis: /users) do |f| @output_buffer.safe_append='
+app/views/users/new.html.erb:5: syntax error, unexpected '<'
+app/views/users/new.html.erb:6: syntax error, unexpected ':', expecting end
+app/views/users/new.html.erb:6: syntax error, unexpected tREGEXP_BEG, expecting do or '{' or '('
+app/views/users/new.html.erb:9: syntax error, unexpected '<'
+app/views/users/new.html.erb:14: unterminated string meets end of file
+app/views/users/new.html.erb:14: syntax error, unexpected end-of-input, expecting end
+app/views/users/new.html.erb:4: unmatched close parenthesis: /users) do |f| @output_buffer.safe_append='
+app/views/users/new.html.erb:5: syntax error, unexpected '<'
+app/views/users/new.html.erb:6: syntax error, unexpected ':', expecting end
+app/views/users/new.html.erb:6: syntax error, unexpected tREGEXP_BEG, expecting do or '{' or '('
+app/views/users/new.html.erb:9: syntax error, unexpected '<'
+app/views/users/new.html.erb:14: unterminated string meets end of file
+app/views/users/new.html.erb:14: syntax error, unexpected end-of-input, expecting end
+app/views/users/new.html.erb:4: unmatched close parenthesis: /users) do |f| @output_buffer.safe_append='
+app/views/users/new.html.erb:5: syntax error, unexpected '<'
+app/views/users/new.html.erb:6: syntax error, unexpected ':', expecting end
+app/views/users/new.html.erb:6: syntax error, unexpected tREGEXP_BEG, expecting do or '{' or '('
+app/views/users/new.html.erb:9: syntax error, unexpected '<'
+app/views/users/new.html.erb:14: unterminated string meets end of file
+app/views/users/new.html.erb:14: syntax error, unexpected end-of-input, expecting end
+Started GET "/users/new" for ::1 at 2021-01-22 15:40:09 -0600
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1084)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms | Allocations: 2329)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1> This is the Registration page </h1>
+
+<%= form_for(@user, url: /users) do |f| %>
+  Username: <%= text_field(:user, :username) %><br />
+  <p>
+  e-mail: <%= email_field("user", "email")%><br />
+  <p>
+  Password: <%= password_field(:user, :password) %><br />
+  <p>
+  <%= f.submit %>
+<% end %>
+
+
+):
+1:    <h1> This is the Registration page </h1>
+2:    
+3:    <%= form_for(@user, url: /users) do |f| %>
+4:      Username: <%= text_field(:user, :username) %><br />
+5:      <p>
+6:      e-mail: <%= email_field("user", "email")%><br />
+7:      <p>
+8:      Password: <%= password_field(:user, :password) %><br />
+9:      <p>
+10:      <%= f.submit %>
+11:    <% end %>
+  
+app/views/users/new.html.erb:4: unmatched close parenthesis: /users) do |f| @output_buffer.safe_append='
+app/views/users/new.html.erb:5: syntax error, unexpected '<'
+app/views/users/new.html.erb:6: syntax error, unexpected ':', expecting end
+app/views/users/new.html.erb:6: syntax error, unexpected tREGEXP_BEG, expecting do or '{' or '('
+app/views/users/new.html.erb:9: syntax error, unexpected '<'
+app/views/users/new.html.erb:14: unterminated string meets end of file
+app/views/users/new.html.erb:14: syntax error, unexpected end-of-input, expecting end
+app/views/users/new.html.erb:4: unmatched close parenthesis: /users) do |f| @output_buffer.safe_append='
+app/views/users/new.html.erb:5: syntax error, unexpected '<'
+app/views/users/new.html.erb:6: syntax error, unexpected ':', expecting end
+app/views/users/new.html.erb:6: syntax error, unexpected tREGEXP_BEG, expecting do or '{' or '('
+app/views/users/new.html.erb:9: syntax error, unexpected '<'
+app/views/users/new.html.erb:14: unterminated string meets end of file
+app/views/users/new.html.erb:14: syntax error, unexpected end-of-input, expecting end
+app/views/users/new.html.erb:4: unmatched close parenthesis: /users) do |f| @output_buffer.safe_append='
+app/views/users/new.html.erb:5: syntax error, unexpected '<'
+app/views/users/new.html.erb:6: syntax error, unexpected ':', expecting end
+app/views/users/new.html.erb:6: syntax error, unexpected tREGEXP_BEG, expecting do or '{' or '('
+app/views/users/new.html.erb:9: syntax error, unexpected '<'
+app/views/users/new.html.erb:14: unterminated string meets end of file
+app/views/users/new.html.erb:14: syntax error, unexpected end-of-input, expecting end
+app/views/users/new.html.erb:4: unmatched close parenthesis: /users) do |f| @output_buffer.safe_append='
+app/views/users/new.html.erb:5: syntax error, unexpected '<'
+app/views/users/new.html.erb:6: syntax error, unexpected ':', expecting end
+app/views/users/new.html.erb:6: syntax error, unexpected tREGEXP_BEG, expecting do or '{' or '('
+app/views/users/new.html.erb:9: syntax error, unexpected '<'
+app/views/users/new.html.erb:14: unterminated string meets end of file
+app/views/users/new.html.erb:14: syntax error, unexpected end-of-input, expecting end
+app/views/users/new.html.erb:4: unmatched close parenthesis: /users) do |f| @output_buffer.safe_append='
+app/views/users/new.html.erb:5: syntax error, unexpected '<'
+app/views/users/new.html.erb:6: syntax error, unexpected ':', expecting end
+app/views/users/new.html.erb:6: syntax error, unexpected tREGEXP_BEG, expecting do or '{' or '('
+app/views/users/new.html.erb:9: syntax error, unexpected '<'
+app/views/users/new.html.erb:14: unterminated string meets end of file
+app/views/users/new.html.erb:14: syntax error, unexpected end-of-input, expecting end
+app/views/users/new.html.erb:4: unmatched close parenthesis: /users) do |f| @output_buffer.safe_append='
+app/views/users/new.html.erb:5: syntax error, unexpected '<'
+app/views/users/new.html.erb:6: syntax error, unexpected ':', expecting end
+app/views/users/new.html.erb:6: syntax error, unexpected tREGEXP_BEG, expecting do or '{' or '('
+app/views/users/new.html.erb:9: syntax error, unexpected '<'
+app/views/users/new.html.erb:14: unterminated string meets end of file
+app/views/users/new.html.erb:14: syntax error, unexpected end-of-input, expecting end
+Started GET "/users/new" for ::1 at 2021-01-22 15:42:18 -0600
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 69.8ms | Allocations: 1084)
+Completed 500 Internal Server Error in 440ms (ActiveRecord: 0.0ms | Allocations: 2329)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1> This is the Registration page </h1>
+
+<%= form_for(@user, url: /users) do |f| %>
+  Username: <%= f.text_field :username %><br />
+  <p>
+  e-mail: <%= email_field("user", "email")%><br />
+  <p>
+  Password: <%= password_field(:user, :password) %><br />
+  <p>
+  <%= f.submit %>
+<% end %>
+
+
+):
+1:    <h1> This is the Registration page </h1>
+2:    
+3:    <%= form_for(@user, url: /users) do |f| %>
+4:      Username: <%= f.text_field :username %><br />
+5:      <p>
+6:      e-mail: <%= email_field("user", "email")%><br />
+7:      <p>
+8:      Password: <%= password_field(:user, :password) %><br />
+9:      <p>
+10:      <%= f.submit %>
+11:    <% end %>
+  
+app/views/users/new.html.erb:4: unmatched close parenthesis: /users) do |f| @output_buffer.safe_append='
+app/views/users/new.html.erb:5: syntax error, unexpected '<'
+app/views/users/new.html.erb:6: syntax error, unexpected ':', expecting end
+app/views/users/new.html.erb:6: syntax error, unexpected tREGEXP_BEG, expecting do or '{' or '('
+app/views/users/new.html.erb:9: syntax error, unexpected '<'
+app/views/users/new.html.erb:14: unterminated string meets end of file
+app/views/users/new.html.erb:14: syntax error, unexpected end-of-input, expecting end
+app/views/users/new.html.erb:4: unmatched close parenthesis: /users) do |f| @output_buffer.safe_append='
+app/views/users/new.html.erb:5: syntax error, unexpected '<'
+app/views/users/new.html.erb:6: syntax error, unexpected ':', expecting end
+app/views/users/new.html.erb:6: syntax error, unexpected tREGEXP_BEG, expecting do or '{' or '('
+app/views/users/new.html.erb:9: syntax error, unexpected '<'
+app/views/users/new.html.erb:14: unterminated string meets end of file
+app/views/users/new.html.erb:14: syntax error, unexpected end-of-input, expecting end
+app/views/users/new.html.erb:4: unmatched close parenthesis: /users) do |f| @output_buffer.safe_append='
+app/views/users/new.html.erb:5: syntax error, unexpected '<'
+app/views/users/new.html.erb:6: syntax error, unexpected ':', expecting end
+app/views/users/new.html.erb:6: syntax error, unexpected tREGEXP_BEG, expecting do or '{' or '('
+app/views/users/new.html.erb:9: syntax error, unexpected '<'
+app/views/users/new.html.erb:14: unterminated string meets end of file
+app/views/users/new.html.erb:14: syntax error, unexpected end-of-input, expecting end
+app/views/users/new.html.erb:4: unmatched close parenthesis: /users) do |f| @output_buffer.safe_append='
+app/views/users/new.html.erb:5: syntax error, unexpected '<'
+app/views/users/new.html.erb:6: syntax error, unexpected ':', expecting end
+app/views/users/new.html.erb:6: syntax error, unexpected tREGEXP_BEG, expecting do or '{' or '('
+app/views/users/new.html.erb:9: syntax error, unexpected '<'
+app/views/users/new.html.erb:14: unterminated string meets end of file
+app/views/users/new.html.erb:14: syntax error, unexpected end-of-input, expecting end
+app/views/users/new.html.erb:4: unmatched close parenthesis: /users) do |f| @output_buffer.safe_append='
+app/views/users/new.html.erb:5: syntax error, unexpected '<'
+app/views/users/new.html.erb:6: syntax error, unexpected ':', expecting end
+app/views/users/new.html.erb:6: syntax error, unexpected tREGEXP_BEG, expecting do or '{' or '('
+app/views/users/new.html.erb:9: syntax error, unexpected '<'
+app/views/users/new.html.erb:14: unterminated string meets end of file
+app/views/users/new.html.erb:14: syntax error, unexpected end-of-input, expecting end
+app/views/users/new.html.erb:4: unmatched close parenthesis: /users) do |f| @output_buffer.safe_append='
+app/views/users/new.html.erb:5: syntax error, unexpected '<'
+app/views/users/new.html.erb:6: syntax error, unexpected ':', expecting end
+app/views/users/new.html.erb:6: syntax error, unexpected tREGEXP_BEG, expecting do or '{' or '('
+app/views/users/new.html.erb:9: syntax error, unexpected '<'
+app/views/users/new.html.erb:14: unterminated string meets end of file
+app/views/users/new.html.erb:14: syntax error, unexpected end-of-input, expecting end
+Started GET "/users/new" for ::1 at 2021-01-22 15:43:35 -0600
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 342.6ms | Allocations: 4295)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1186ms (Views: 763.7ms | ActiveRecord: 0.0ms | Allocations: 11055)
+
+
+Started POST "/users" for ::1 at 2021-01-22 15:43:52 -0600
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"Uig/Nh1IGPFB/A1TezDPjv8tpw43cLb/x5SCoojpQRfY2x430taAvcLICMhZu8EI4fk09Do0DAGd8iWAX4JVRg==", "user"=>{"username"=>"insta@test.com", "email"=>"Josediazt6@outlook.com", "password"=>"[FILTERED]"}, "commit"=>"Create User"}
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 3.9ms | Allocations: 433)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 194ms (Views: 94.2ms | ActiveRecord: 0.0ms | Allocations: 5637)
+
+
+Started GET "/users/new" for ::1 at 2021-01-22 15:46:58 -0600
+  [1m[35m (14.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 111.5ms | Allocations: 478)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 491ms (Views: 261.8ms | ActiveRecord: 11.6ms | Allocations: 9048)
+
+
+Started POST "/users" for ::1 at 2021-01-22 15:47:12 -0600
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"gEpYuSjB3aKX0QnmSX2d/s8hLLJ8+khDH/7fY0/XNM0KuXm4519F7hTlDH1r9pN40fW/SHG+8r1FmHhBmLwgnA==", "user"=>{"username"=>"insta@test.com", "email"=>"Josediazt6@outlook.com", "password"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:11:in `create'
+  [1m[36mUser Create (88.8ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["username", "insta@test.com"], ["email", "Josediazt6@outlook.com"], ["password", "iamsunt6"], ["created_at", "2021-01-22 21:47:12.553849"], ["updated_at", "2021-01-22 21:47:12.553849"]]
+  ↳ app/controllers/users_controller.rb:11:in `create'
+  [1m[35m (3.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:11:in `create'
+Redirected to http://localhost:3000/users/new
+Completed 302 Found in 300ms (ActiveRecord: 92.4ms | Allocations: 2866)
+
+
+Started GET "/users/new" for ::1 at 2021-01-22 15:47:12 -0600
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 420)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 185ms (Views: 184.0ms | ActiveRecord: 0.0ms | Allocations: 6569)
+
+
+Started GET "/users/new" for ::1 at 2021-01-22 15:52:58 -0600
+  [1m[35m (34.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 55.3ms | Allocations: 1202)
+Completed 500 Internal Server Error in 426ms (ActiveRecord: 0.0ms | Allocations: 2444)
+
+
+  
+ActionView::Template::Error (no implicit conversion of Symbol into String):
+    3: <%= form_for(@user, url: "/users") do |f| %>
+    4:   Username: <%= f.text_field :username %><br />
+    5:   <p>
+    6:   e-mail: <%= email_field("user", "email", "Your email goes here")%><br />
+    7:   <p>
+    8:   Password: <%= password_field(:user, :password) %><br />
+    9:   <p>
+  
+app/views/users/new.html.erb:6
+app/views/users/new.html.erb:3
+Started GET "/users/new" for ::1 at 2021-01-22 15:53:58 -0600
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 228.0ms | Allocations: 613)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1091ms (Views: 1045.1ms | ActiveRecord: 0.0ms | Allocations: 5472)
+
+
+Started GET "/users/new" for ::1 at 2021-01-22 15:54:22 -0600
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 138.9ms | Allocations: 2732)
+Completed 500 Internal Server Error in 230ms (ActiveRecord: 0.0ms | Allocations: 3970)
+
+
+  
+ActionView::Template::Error (undefined method `Your email goes here' for #<User:0x00007fc14e0f3db0>):
+    3: <%= form_for(@user, url: "/users") do |f| %>
+    4:   Username: <%= f.text_field :username %><br />
+    5:   <p>
+    6:   e-mail: <%= email_field("user", "Your email goes here")%><br />
+    7:   <p>
+    8:   Password: <%= password_field(:user, :password) %><br />
+    9:   <p>
+  
+app/views/users/new.html.erb:6
+app/views/users/new.html.erb:3
+Started GET "/users/new" for ::1 at 2021-01-22 15:55:15 -0600
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 45.3ms | Allocations: 613)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 578ms (Views: 569.3ms | ActiveRecord: 0.0ms | Allocations: 5466)
+
+
+Started GET "/users/new" for ::1 at 2021-01-22 15:58:43 -0600
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 33.5ms | Allocations: 1092)
+Completed 500 Internal Server Error in 271ms (ActiveRecord: 0.0ms | Allocations: 2327)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1> This is the Registration page </h1>
+
+<%= form_for(@user, url: "/users") do |f| %>
+  Username: <%= f.text_field :username %><br />
+  <p>
+  e-mail: <%= email_field("user", "email" {:prompt => 'example@example.com'})%><br />
+  <p>
+  Password: <%= password_field(:user, :password) %><br />
+  <p>
+  <%= f.submit %>
+<% end %>
+
+
+):
+1:    <h1> This is the Registration page </h1>
+2:    
+3:    <%= form_for(@user, url: "/users") do |f| %>
+4:      Username: <%= f.text_field :username %><br />
+5:      <p>
+6:      e-mail: <%= email_field("user", "email" {:prompt => 'example@example.com'})%><br />
+7:      <p>
+8:      Password: <%= password_field(:user, :password) %><br />
+9:      <p>
+10:      <%= f.submit %>
+11:    <% end %>
+  
+app/views/users/new.html.erb:6: syntax error, unexpected '{', expecting ')'
+app/views/users/new.html.erb:6: syntax error, unexpected '}', expecting ')'
+app/views/users/new.html.erb:11: syntax error, unexpected end, expecting ')'
+app/views/users/new.html.erb:14: syntax error, unexpected end, expecting ')'
+app/views/users/new.html.erb:6: syntax error, unexpected '{', expecting ')'
+app/views/users/new.html.erb:6: syntax error, unexpected '}', expecting ')'
+app/views/users/new.html.erb:11: syntax error, unexpected end, expecting ')'
+app/views/users/new.html.erb:14: syntax error, unexpected end, expecting ')'
+app/views/users/new.html.erb:6: syntax error, unexpected '{', expecting ')'
+app/views/users/new.html.erb:6: syntax error, unexpected '}', expecting ')'
+app/views/users/new.html.erb:11: syntax error, unexpected end, expecting ')'
+app/views/users/new.html.erb:14: syntax error, unexpected end, expecting ')'
+app/views/users/new.html.erb:6: syntax error, unexpected '{', expecting ')'
+app/views/users/new.html.erb:6: syntax error, unexpected '}', expecting ')'
+app/views/users/new.html.erb:11: syntax error, unexpected end, expecting ')'
+app/views/users/new.html.erb:14: syntax error, unexpected end, expecting ')'
+app/views/users/new.html.erb:6: syntax error, unexpected '{', expecting ')'
+app/views/users/new.html.erb:6: syntax error, unexpected '}', expecting ')'
+app/views/users/new.html.erb:11: syntax error, unexpected end, expecting ')'
+app/views/users/new.html.erb:14: syntax error, unexpected end, expecting ')'
+app/views/users/new.html.erb:6: syntax error, unexpected '{', expecting ')'
+app/views/users/new.html.erb:6: syntax error, unexpected '}', expecting ')'
+app/views/users/new.html.erb:11: syntax error, unexpected end, expecting ')'
+app/views/users/new.html.erb:14: syntax error, unexpected end, expecting ')'
+Started GET "/users/new" for ::1 at 2021-01-22 15:59:07 -0600
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 12.9ms | Allocations: 623)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 235ms (Views: 230.4ms | ActiveRecord: 0.0ms | Allocations: 5474)
+
+
+Started GET "/users/new" for ::1 at 2021-01-22 15:59:13 -0600
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 4.4ms | Allocations: 428)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 128ms (Views: 126.2ms | ActiveRecord: 0.0ms | Allocations: 4347)
+
+
+Started GET "/users/new" for ::1 at 2021-01-22 15:59:51 -0600
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 71.0ms | Allocations: 622)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 225ms (Views: 219.9ms | ActiveRecord: 0.0ms | Allocations: 5463)
+
+
+Started GET "/users/new" for ::1 at 2021-01-22 16:02:25 -0600
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 289.1ms | Allocations: 633)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 780ms (Views: 752.9ms | ActiveRecord: 0.0ms | Allocations: 5476)
+
+
+Started GET "/users/new" for ::1 at 2021-01-22 16:03:02 -0600
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 2.5ms | Allocations: 633)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 151ms (Views: 148.6ms | ActiveRecord: 0.0ms | Allocations: 5480)
+
+
+Started GET "/users/new" for ::1 at 2021-01-22 16:04:03 -0600
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 48.9ms | Allocations: 643)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 721ms (Views: 515.4ms | ActiveRecord: 0.0ms | Allocations: 5489)
+
+
+Started GET "/users/new" for ::1 at 2021-01-22 16:04:26 -0600
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 3.5ms | Allocations: 644)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 128ms (Views: 125.9ms | ActiveRecord: 0.0ms | Allocations: 5487)
+
+
+Started POST "/users" for ::1 at 2021-01-22 16:05:50 -0600
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"EwflhmzXfFLaHX5nttgY8A+w/f2sCo2YpWoFHtyVMtyZ9MSHo0nkHlkpe/yUUxZ2EWRuB6FON2b/DKI8C/4mjQ==", "user"=>{"username"=>"insta@test.com", "email"=>"Josediazt6@outlook.com", "password"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[35m (0.7ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:11:in `create'
+  [1m[36mUser Create (1.7ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["username", "insta@test.com"], ["email", "Josediazt6@outlook.com"], ["password", "iamsunt6"], ["created_at", "2021-01-22 22:05:51.085744"], ["updated_at", "2021-01-22 22:05:51.085744"]]
+  ↳ app/controllers/users_controller.rb:11:in `create'
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:11:in `create'
+Redirected to http://localhost:3000/users/new
+Completed 302 Found in 180ms (ActiveRecord: 3.8ms | Allocations: 2694)
+
+
+Started GET "/users/new" for ::1 at 2021-01-22 16:05:51 -0600
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 27.4ms | Allocations: 445)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 213ms (Views: 196.4ms | ActiveRecord: 0.0ms | Allocations: 4535)
+
+
+Started GET "/users/new" for ::1 at 2021-01-22 16:11:40 -0600
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 658.4ms | Allocations: 5046)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1381ms (Views: 1262.6ms | ActiveRecord: 0.0ms | Allocations: 9794)
+
+
