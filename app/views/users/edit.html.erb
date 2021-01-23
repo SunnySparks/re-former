@@ -1,0 +1,11 @@
+<h1> Edit your profile and then click submit </h1>
+
+<%= form_for User.new do |f| %>
+    Username: <%= f.text_field :username, :placeholder => "Type your username" %><br />
+    <p>
+    e-mail: <%= email_field("user", "email", {:placeholder => 'example@example.com'})%><br />
+    <p>
+    Password: <%= password_field(:user, :password, {:placeholder => 'Secret Word'}) %><br />
+    <p>
+    <%= f.submit %>
+  <% end %>
