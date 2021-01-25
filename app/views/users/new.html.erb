@@ -10,7 +10,10 @@
   <%= f.submit %>
 <% end %>
 
+<%
 =begin
+%>
+
 <%= form_with model: @user, url: { action: "create" }, class: "form-signup" do |f| %>
   <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
     <%= f.label :username %>
@@ -52,4 +55,7 @@
   </p>
   <input type="submit" value="Submit">
 </form>
+
+<%
 =end
+%>
