@@ -1,6 +1,6 @@
 <h1> Edit your profile and then click submit </h1>
 
-<%= form_for User.new do |f| %>
+<%= form_for @user, url: user_path, html: {class: "odin-form"} do |f| %>
     Username: <%= f.text_field :username, :placeholder => "Update your username" %><br />
     <p>
     e-mail: <%= email_field("user", "email", {:placeholder => 'example@example.com'})%><br />
