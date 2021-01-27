@@ -9027,3 +9027,203 @@ Processing by UsersController#new as HTML
 Completed 200 OK in 622ms (Views: 338.4ms | ActiveRecord: 4.7ms | Allocations: 9169)
 
 
+Started GET "/users/new?notice=User+successfully+updated" for ::1 at 2021-01-27 08:24:40 -0600
+Started GET "/users/new?notice=User+successfully+updated" for ::1 at 2021-01-27 08:24:40 -0600
+  [1m[35m (11.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (3.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#new as HTML
+  Parameters: {"notice"=>"User successfully updated"}
+Processing by UsersController#new as HTML
+  Parameters: {"notice"=>"User successfully updated"}
+  Rendering users/new.html.erb within layouts/application
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 99.0ms | Allocations: 3217)
+  Rendered users/new.html.erb within layouts/application (Duration: 40.7ms | Allocations: 2397)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 833ms (Views: 438.8ms | ActiveRecord: 0.0ms | Allocations: 21440)
+
+
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 745ms (Views: 483.3ms | ActiveRecord: 3.0ms | Allocations: 22397)
+
+
+Started POST "/users" for ::1 at 2021-01-27 08:27:39 -0600
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"QyaQFPcRnGJKlbxlfx4HfeBhKFiT4tBzbsCGk6R1jYnJ1bEVOI8ELsmhuf5dlQn7/rW7op6mao00piGxcx6Z2A==", "user"=>{"username"=>"user 11th", "email"=>"email@email.com", "password"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[35m (0.7ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:10:in `create'
+  [1m[36mUser Create (300.0ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["username", "user 11th"], ["email", "email@email.com"], ["password", "password"], ["created_at", "2021-01-27 14:27:39.184962"], ["updated_at", "2021-01-27 14:27:39.184962"]]
+  ↳ app/controllers/users_controller.rb:10:in `create'
+  [1m[35m (234.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:10:in `create'
+Redirected to http://localhost:3000/users/new
+Completed 302 Found in 633ms (ActiveRecord: 535.2ms | Allocations: 4527)
+
+
+Started GET "/users/new" for ::1 at 2021-01-27 08:27:39 -0600
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 15.2ms | Allocations: 445)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 141ms (Views: 138.2ms | ActiveRecord: 0.0ms | Allocations: 4375)
+
+
+Started GET "/users/:id/edit" for ::1 at 2021-01-27 08:28:33 -0600
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>":id"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `edit'
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (Duration: 5.2ms | Allocations: 765)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 118ms (Views: 56.1ms | ActiveRecord: 0.9ms | Allocations: 7830)
+
+
+Started PATCH "/users/:id" for ::1 at 2021-01-27 08:28:47 -0600
+Processing by UsersController#update as HTML
+  Parameters: {"authenticity_token"=>"rVp7JymfMoIedFDVrTi3bOT8bG+RJob3K5ds1UKRT/QnqVom5gGqzp1AVU6Ps7nq+ij/lZxiPAlx8cv3lfpbpQ==", "user"=>{"username"=>"User__", "email"=>"email0@email.com", "password"=>"[FILTERED]"}, "commit"=>"Update User", "id"=>":id"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:22:in `update'
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:22:in `update'
+  [1m[36mUser Update (7.3ms)[0m  [1m[33mUPDATE "users" SET "password" = ?, "username" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["password", "Passwordd"], ["username", "User__"], ["updated_at", "2021-01-27 14:28:47.723034"], ["id", 0]]
+  ↳ app/controllers/users_controller.rb:22:in `update'
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:22:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:22:in `update'
+  [1m[36mUser Update (1.4ms)[0m  [1m[33mUPDATE "users" SET "password" = ?, "username" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["password", "Passwordd"], ["username", "User__"], ["updated_at", "2021-01-27 14:28:47.744359"], ["id", 1]]
+  ↳ app/controllers/users_controller.rb:22:in `update'
+  [1m[35m (4.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:22:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:22:in `update'
+  [1m[36mUser Update (0.7ms)[0m  [1m[33mUPDATE "users" SET "password" = ?, "username" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["password", "Passwordd"], ["username", "User__"], ["updated_at", "2021-01-27 14:28:47.780047"], ["id", 2]]
+  ↳ app/controllers/users_controller.rb:22:in `update'
+  [1m[35m (20.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:22:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:22:in `update'
+  [1m[36mUser Update (3.3ms)[0m  [1m[33mUPDATE "users" SET "password" = ?, "username" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["password", "Passwordd"], ["username", "User__"], ["updated_at", "2021-01-27 14:28:47.832845"], ["id", 3]]
+  ↳ app/controllers/users_controller.rb:22:in `update'
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:22:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:22:in `update'
+  [1m[36mUser Update (0.6ms)[0m  [1m[33mUPDATE "users" SET "password" = ?, "username" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["password", "Passwordd"], ["username", "User__"], ["updated_at", "2021-01-27 14:28:47.848207"], ["id", 4]]
+  ↳ app/controllers/users_controller.rb:22:in `update'
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:22:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:22:in `update'
+  [1m[36mUser Update (0.7ms)[0m  [1m[33mUPDATE "users" SET "password" = ?, "username" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["password", "Passwordd"], ["username", "User__"], ["updated_at", "2021-01-27 14:28:47.861552"], ["id", 5]]
+  ↳ app/controllers/users_controller.rb:22:in `update'
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:22:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:22:in `update'
+  [1m[36mUser Update (1.0ms)[0m  [1m[33mUPDATE "users" SET "password" = ?, "username" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["password", "Passwordd"], ["username", "User__"], ["updated_at", "2021-01-27 14:28:47.877646"], ["id", 6]]
+  ↳ app/controllers/users_controller.rb:22:in `update'
+  [1m[35m (6.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:22:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:22:in `update'
+  [1m[36mUser Update (0.6ms)[0m  [1m[33mUPDATE "users" SET "password" = ?, "username" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["password", "Passwordd"], ["username", "User__"], ["updated_at", "2021-01-27 14:28:47.896905"], ["id", 7]]
+  ↳ app/controllers/users_controller.rb:22:in `update'
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:22:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:22:in `update'
+  [1m[36mUser Update (0.7ms)[0m  [1m[33mUPDATE "users" SET "password" = ?, "username" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["password", "Passwordd"], ["username", "User__"], ["updated_at", "2021-01-27 14:28:47.905130"], ["id", 8]]
+  ↳ app/controllers/users_controller.rb:22:in `update'
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:22:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:22:in `update'
+  [1m[36mUser Update (0.4ms)[0m  [1m[33mUPDATE "users" SET "password" = ?, "username" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["password", "Passwordd"], ["username", "User__"], ["updated_at", "2021-01-27 14:28:47.934626"], ["id", 9]]
+  ↳ app/controllers/users_controller.rb:22:in `update'
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:22:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:22:in `update'
+  [1m[36mUser Update (0.5ms)[0m  [1m[33mUPDATE "users" SET "password" = ?, "username" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["password", "Passwordd"], ["username", "User__"], ["updated_at", "2021-01-27 14:28:47.943743"], ["id", 10]]
+  ↳ app/controllers/users_controller.rb:22:in `update'
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:22:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:22:in `update'
+  [1m[36mUser Update (0.5ms)[0m  [1m[33mUPDATE "users" SET "password" = ?, "username" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["password", "Passwordd"], ["username", "User__"], ["updated_at", "2021-01-27 14:28:47.958126"], ["id", 11]]
+  ↳ app/controllers/users_controller.rb:22:in `update'
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:22:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:22:in `update'
+  [1m[36mUser Update (1.1ms)[0m  [1m[33mUPDATE "users" SET "password" = ?, "username" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["password", "Passwordd"], ["username", "User__"], ["updated_at", "2021-01-27 14:28:47.970104"], ["id", 12]]
+  ↳ app/controllers/users_controller.rb:22:in `update'
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:22:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:22:in `update'
+  [1m[36mUser Update (0.4ms)[0m  [1m[33mUPDATE "users" SET "password" = ?, "username" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["password", "Passwordd"], ["username", "User__"], ["updated_at", "2021-01-27 14:28:47.984061"], ["id", 13]]
+  ↳ app/controllers/users_controller.rb:22:in `update'
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:22:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:22:in `update'
+  [1m[36mUser Update (0.5ms)[0m  [1m[33mUPDATE "users" SET "password" = ?, "username" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["password", "Passwordd"], ["username", "User__"], ["updated_at", "2021-01-27 14:28:47.993642"], ["id", 14]]
+  ↳ app/controllers/users_controller.rb:22:in `update'
+  [1m[35m (12.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:22:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:22:in `update'
+  [1m[36mUser Update (0.5ms)[0m  [1m[33mUPDATE "users" SET "password" = ?, "username" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["password", "Passwordd"], ["username", "User__"], ["updated_at", "2021-01-27 14:28:48.027949"], ["id", 15]]
+  ↳ app/controllers/users_controller.rb:22:in `update'
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:22:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:22:in `update'
+  [1m[36mUser Update (0.5ms)[0m  [1m[33mUPDATE "users" SET "password" = ?, "username" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["password", "Passwordd"], ["username", "User__"], ["updated_at", "2021-01-27 14:28:48.066871"], ["id", 16]]
+  ↳ app/controllers/users_controller.rb:22:in `update'
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:22:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:22:in `update'
+  [1m[36mUser Update (0.5ms)[0m  [1m[33mUPDATE "users" SET "password" = ?, "username" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["password", "Passwordd"], ["username", "User__"], ["updated_at", "2021-01-27 14:28:48.077399"], ["id", 17]]
+  ↳ app/controllers/users_controller.rb:22:in `update'
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:22:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:22:in `update'
+  [1m[36mUser Update (0.5ms)[0m  [1m[33mUPDATE "users" SET "password" = ?, "username" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["password", "Passwordd"], ["username", "User__"], ["updated_at", "2021-01-27 14:28:48.097496"], ["id", 18]]
+  ↳ app/controllers/users_controller.rb:22:in `update'
+  [1m[35m (10.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:22:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:22:in `update'
+  [1m[36mUser Update (0.5ms)[0m  [1m[33mUPDATE "users" SET "password" = ?, "username" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["password", "Passwordd"], ["username", "User__"], ["updated_at", "2021-01-27 14:28:48.122160"], ["id", 19]]
+  ↳ app/controllers/users_controller.rb:22:in `update'
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:22:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:22:in `update'
+  [1m[36mUser Update (0.5ms)[0m  [1m[33mUPDATE "users" SET "email" = ?, "password" = ?, "username" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["email", "email0@email.com"], ["password", "Passwordd"], ["username", "User__"], ["updated_at", "2021-01-27 14:28:48.131057"], ["id", 20]]
+  ↳ app/controllers/users_controller.rb:22:in `update'
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:22:in `update'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:23:in `update'
+Redirected to http://localhost:3000/users/new?notice=User+successfully+updated
+Completed 302 Found in 441ms (ActiveRecord: 100.9ms | Allocations: 65912)
+
+
+Started GET "/users/new?notice=User+successfully+updated" for ::1 at 2021-01-27 08:28:48 -0600
+Processing by UsersController#new as HTML
+  Parameters: {"notice"=>"User successfully updated"}
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 445)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 81ms (Views: 79.4ms | ActiveRecord: 0.0ms | Allocations: 4369)
+
+
