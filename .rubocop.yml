@@ -58,3 +58,5 @@ Style/StringLiteralsInInterpolation:
   Enabled: false
 Style/GlobalVars:
   Enabled: false
+Style/NumericLiterals:
+  Enabled: false
