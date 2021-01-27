@@ -9020,3 +9020,25 @@ Processing by UsersController#new as HTML
 Completed 200 OK in 622ms (Views: 338.4ms | ActiveRecord: 4.7ms | Allocations: 9169)
 
 
+Started GET "/users/new?notice=User+successfully+updated" for ::1 at 2021-01-27 08:24:40 -0600
+Started GET "/users/new?notice=User+successfully+updated" for ::1 at 2021-01-27 08:24:40 -0600
+  [1m[35m (11.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (3.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#new as HTML
+  Parameters: {"notice"=>"User successfully updated"}
+Processing by UsersController#new as HTML
+  Parameters: {"notice"=>"User successfully updated"}
+  Rendering users/new.html.erb within layouts/application
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 99.0ms | Allocations: 3217)
+  Rendered users/new.html.erb within layouts/application (Duration: 40.7ms | Allocations: 2397)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 833ms (Views: 438.8ms | ActiveRecord: 0.0ms | Allocations: 21440)
+
+
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 745ms (Views: 483.3ms | ActiveRecord: 3.0ms | Allocations: 22397)
+
+
