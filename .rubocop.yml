@@ -80,5 +80,3 @@ Style/SpecialGlobalVars:
   Enabled: false
 Style/EmptyMethod:
   Enabled: false
-Lint/Syntax:
-  Enabled: false
