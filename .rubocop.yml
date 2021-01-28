@@ -79,3 +79,7 @@ Style/SpecialGlobalVars:
   Enabled: false
 Style/EmptyMethod:
   Enabled: false
+Layout/TrailingEmptyLines:
+  Enabled: false
+Style/BlockComments:
+  Enabled: false
