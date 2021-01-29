@@ -1,15 +1,13 @@
 <h1> This is the Registration page </h1>
 
-
-
-<%= form_for(@user, url: "/users") do |f| %>
+<%= form_for @user do |f|%>
   Username: <%= f.text_field :username, :placeholder => "Type your username" %><br />
   <p>
   e-mail: <%= email_field("user", "email", {:placeholder => 'example@example.com'})%><br />
   <p>
   Password: <%= password_field(:user, :password, {:placeholder => 'Secret Word'}) %><br />
   <p>
-  <%= f.submit %>
+  <%= f.submit :Submit%>
 <% end %>
 
 <%
@@ -32,7 +30,6 @@
   <% end %>
 
   <%= form_tag('/users') do %>
-    <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
     <%= label_tag('username', "Username") %>
     <%= text_field_tag(:username) %>
     <p>
