@@ -1,0 +1,85 @@
+AllCops:
+  Exclude:
+    - "Guardfile"
+    - "Rakefile"
+
+  DisplayCopNames: true
+
+Layout/LineLength:
+  Max: 200
+Metrics/MethodLength:
+  Max: 20
+Metrics/AbcSize:
+  Max: 50
+Metrics/ClassLength:
+  Max: 150
+Metrics/BlockLength:
+  ExcludedMethods: ['describe']
+  Max: 30
+Metrics/CyclomaticComplexity:
+  Max: 10
+
+Style/Documentation:
+  Enabled: false
+Style/ClassAndModuleChildren:
+  Enabled: false
+Style/EachForSimpleLoop:
+  Enabled: false
+Style/AndOr:
+  Enabled: false
+Style/DefWithParentheses:
+  Enabled: false
+Style/FrozenStringLiteralComment:
+  EnforcedStyle: never
+
+Layout/HashAlignment:
+  EnforcedColonStyle: key
+Layout/ExtraSpacing:
+  AllowForAlignment: false
+Layout/MultilineMethodCallIndentation:
+  Enabled: true
+  EnforcedStyle: indented
+Lint/RaiseException:
+  Enabled: false
+Lint/StructNewOverride:
+  Enabled: false
+Style/HashEachMethods:
+  Enabled: false
+Style/HashTransformKeys:
+  Enabled: false
+Style/HashTransformValues:
+  Enabled: false
+Style/ClassAndModuleChildren:
+  Enabled: false
+Style/FrozenStringLiteralComment:
+  Enabled: false
+Style/StringLiterals:
+  Enabled: false
+Style/StringLiteralsInInterpolation:
+  Enabled: false
+Style/GlobalVars:
+  Enabled: false
+Style/NumericLiterals:
+  Enabled: false
+Style/SymbolArray:
+  Enabled: false
+Style/StderrPuts:
+  Enabled: false
+Style/RedundantBegin:
+  Enabled: false
+Style/ExpandPathArguments:
+  Enabled: false
+Style/IfUnlessModifier:
+  Enabled: false
+Style/PerlBackrefs:
+  Enabled: false
+Metrics/PerceivedComplexity:
+  Enabled: false
+Style/SpecialGlobalVars:
+  Enabled: false
+Style/EmptyMethod:
+  Enabled: false
+Layout/TrailingEmptyLines:
+  Enabled: false
+Style/BlockComments:
+  Enabled: false

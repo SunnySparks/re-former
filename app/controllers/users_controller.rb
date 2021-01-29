@@ -15,9 +15,16 @@ class UsersController < ApplicationController
   end
 
   def edit
+    @user = User.find(params[:id].to_i)
   end
 
   def update
+    @user = User.update(user_params)
+    if User.update(user_params)
+      redirect_to new_user_path notice: 'User successfully updated'
+    else
+      render :edit
+    end
   end
 
   private

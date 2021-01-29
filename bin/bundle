@@ -25,7 +25,7 @@ m = Module.new do
     return unless invoked_as_script? # don't want to hijack other binstubs
     return unless "update".start_with?(ARGV.first || " ") # must be running `bundle update`
 
-    bundler_version = nil
+    bundler_version = '2.2.7'
     update_index = nil
     ARGV.each_with_index do |a, i|
       if update_index && update_index.succ == i && a =~ Gem::Version::ANCHORED_VERSION_PATTERN
